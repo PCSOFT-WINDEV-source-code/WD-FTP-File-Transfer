@@ -1,0 +1,103 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Wait_Disconnection
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Wait_Disconnection
+ identifier : 0x274577e418b3b892
+ internal_properties : CAAAAAgAAAAkHwo5NGW8r3KDWsbEcPPzDD8CO/zrYOqtc2wJlEM9QI/NMHjbbGlQ34wRKX2kuejycIsBJVwYRcgnCu6fn12sPEYG1koj7hxZy3boONNjkPP3L66k+u5U1YFxGTV/Lu1YmVWEYo3ikp/fw9CiHYv23n3IaRssOkYE5Rzaj65G9ZknE+a4oJPFEIOJZ9ZaiJq/KIjL5GYmNhlLGVSxHRZ/y60qDnCzHf/OS48sec9T+SKbjTQb069sDYM+X0cYnk54dCCENsk+FVwpDLBvKYm3MvApa9GO5+8EB6WVxZ8H5dhz1N7Iz6SIOK1W6WejEP4nz+93rxy3QuOFhmuCa7Jtg9kpAoc1zsKNJ1fxuljWyfiDbk27XqHE6oXfNljb7QGo8SXZAiOekUJgQP0ECZGBc1H7qwhtiCCsTW0t1gRs1yTZ+stloyVTTg0qIojpnDnqDOhxJ/gAIFEc1oZmal0tj0Fwb6Gs16b3R1tfhKKzgE9NMPRhNntKIRUJMdSJZ+LITIXMm6xCStn7We8v47XZMJRIxsIUTZA9EzP0iX4vP/sdcBa08yLh9FZJ2TjaixaF//9tABrkfuYfPVlBazqwY3tNecFMZSmC+C1xD7cMaGUhJjQ4Yjuag5J2Jm0leWWAAiW0l9KHoVOoXBuptPl1z+q1B8Wyw2eYOg+TxemqE2uEHNhWyOTcaZhaAxMt/EjqBJhxZ/eZQe+/XH/CQDWF/kg8fuIwxRz0Z5Yys6HtMpa2P6dCBwiwYpdgWKGQ2gihxrczjnmv8vLB62qgrfpfJyjHRtoVJ1zTGSx5Skq1GRCimpUFAupAqNt4i6NaaPCd97wAWEzUk2FXiEeDHIsZS8twUbc5yMqLjEstWiFBLEChjZIhS7nr4Ew=
+ properties :
+  width : 397
+  height : 191
+  widthClient : 391
+  heightClient : 185
+ controls :
+  -
+    name : STC_NoName1
+    identifier : 0x274577e418b4b892
+    internal_properties : CAAAAAgAAACzc2GwcKH7wwOiCtzP0jLX2l+HVe/mvLsiXL7xCJxeIuAszMA5QthKviDjjedd4X6DpNSYkyLIPgHWjj/e9oxDpX1RGwPwGMG+VeQUHVcV6T6zr9pB2D8CFFeLu3zLCMlb+GR0d76T2fsyTyt7La2D4pMboolJt7dCDbW0wMc4+TeU/pQPs+Cfer8tjTzvCKeFlcXlDoPYwlFtacqSaNYGQQoA6/DsO3Dh2hApnuZ6V3MgGWEBh81xfgBOchGzfcS/Iwp2x18N2aj7Mc1qdRurqGYTsQCshLp01qUwxd2Wtkn/Tmx/6w0naNkBzgWbEGMREkZKOh0rzTxkPRbraaoGulHW3SP1ktEADx3/vnqDG+fIv0SSpUL8pjNXJXtRq0ZBWo6dw+3idQLwwBb4Y1Dqw5+E38405F1ckdHNHl/V1OTsmrRypXJUDDD6pCszWCJAebp+fCte9ebqnR17I+XzzFI0GJvb5WkBDDDDW4Ev/OnHR5A9MaxVN1tKQ+aemQeOk0CUY6od5xUgR4nHTbfMdzymQW/oG5SCOFQ4iiuUEfz+MMbvdeg/e9c=
+    properties :
+     x : 49
+     y : 61
+     width : 309
+     height : 115
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      //--- Popup window ---
+      // To access the popup control or combo box that opened this window
+      // you can use: MyPopupControl
+      PROCEDURE MyWindow()
+       
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1+
+      
+      
+     type : 2
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1609771500b15020
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

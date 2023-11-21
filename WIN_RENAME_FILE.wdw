@@ -1,0 +1,327 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_RENAME_FILE
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_RENAME_FILE
+ identifier : 0x274577e21678b0a3
+ internal_properties : CAAAAAgAAAC6zZ7ywYG5zCRRZ4vXHZAl0J8Ty1qUp9aq1hJPipVC/EW3yzhq2Dn2ThJU4aS1sj4x/aG+lcypkMAKcPqfJZAadeFUrNDU4K4eZUFeZ1IIynwhMet7FbnpuT5L3J63Mfzy4FQPMugf5TUH9Lrqr4wVCFlSrCzJhS4mUBzDiV6bDZlMK1h1/BPpIXGW3t/59MYEzblWv1hiziHdSBb4m3oWG/llSTOouFDVSul/ABNsYFUliWl9o2KvSfCqD5E20E9gtFCPX12EP9k+im5918F31wNKsTB+WsxKatknerU3IMOTOrNPnczSPlWBk4E9Pt6XQRvKkCiCe8+kvTcOwlpepbkSgcoySMnTriEz8Zv9dDU/qIHnJAk6/XB11/zh6wHmZohFUgmtzT7tkBqP6pV8n8+CgOJESCmiOQ3L3SS5H83rpiZ3J+88mB6s3I/Stv9TPpoAch5wrniHZIUvMwoRZQjbA08ZYyGK3EEWWc6WBm43tgrEfj0ksmkpMPMjMPLXX5H+QfsWWt9kdXesiuLiprJ9RaMP52HMu7+MyyNTjvBisH2Z0uYcg6VEJKHVDFM6no+riC3fP56NWi///i+5BW3NHfOz9qOFcbHFp6t5l5PEhGPrUF/jRevE328MP1ZKfGwFXLAWgr6Q89aC6Koor68lk8U+3DbuxwcsD/TgXc9+I2i5Vylf8LBocwSCcjPm1DNTnCQHYW2c9/r51Z2s2+kSgHcSuXEHaYdXb0GqDqtwu1KqQ11Sfz2tSB8tMiHEKCbsTqXSO7eiAIUXjy8gEG+R1M04n/rcQnFzWsTKiLVPNqu1B5wtw2prSbGXRtjuVxk2fqYp7LU7LOFgR/5I6g5Q5kddXIxCNAS2WhpJj51iwMB3dTp1A0oM42KedRD2anP0VEvxSCqV3wCrlsZVXK4wn9KLWT5Ind6dIN+/rh0HN0VejlR8xtqbR4JjQTWsas+UBZX9dpBDYNkoMhKyglcj2QZXjABnWYvcC3qt1KMw691clla06QVzkIWHY9goqPCcTDo30kyHDAiZvZdkBEBg229/fCg3fmPKMMa+6kOUcnDbWYCRRt6Jq/SHBA5FjEh9BLFnuQNxGhfJ7qOxn2HmmcqC/gVN3jM2gzj6EtL830FiT7s4Si49J1vzNZEFG2xdOpL8DDrM/Iho/0B77T5MOA3vpb0b3jNmPw/9w2PmcvW+8vb4w6OypYwYfDlZ/HhRqcONOj+G5bBk3g4x8rP3ydqey0eW1JgmyvGCy9EjCvC4UfUJqYhjvetKGtRmPDjAdLPzKg5JHfUTdGHmJqb40fCIDZjBJos6WurLIzQnUqgDWSEdSvaEc9t/l/0LMS34Pzru9Hk0/sEqM0AXNJWbW/u9BrEnSdwmWx83yFIo0s1XmbAc1J6554LC16++
+ properties :
+  width : 373
+  height : 208
+  widthClient : 371
+  heightClient : 176
+  widthMin : 334
+ controls :
+  -
+    name : EDT_FILE_BEFORE
+    identifier : 0x274577e21679b0a3
+    internal_properties : CAAAAAgAAADCTlbtxE/aLa+IaXHZ53hS8WONRnDyrqmQvprPsHofulTjhIXNHa8myU2SDB0xq8iKITKMX2WRn7SqI4YZfz29XlvfD4YKV/620udj96o4Ya984tm96qBdP7FccfQAV/CL5FAwtX/QzHBbs5/RG1sqbaNr1kEPipge2jISD7q5PNnXMUWEZvVWsbgDRp3RQPrRz7gE7IPF0nHxdodLjxY2RkkdviUygu586EJOjlmZgGc0tHaF7Rzet4BwZzOr6rymATt23a4P1okMZr+27+dcnOTCbVBe4KAIDQYR0WXZQ15wg8mQsfqTXJk9tkT3PWh8t4te/FneEUcOWJlUsM568jXsvu2R2KctB8IpEi/5qQ8oV2PAl1FwxP52f7PEpPMSgMfMvDsRQOgvqt4PS3XoK5SV4z9pJcIyBc4BqG9uO8uIM0rAyED6OFh3SF2/EhXPcvKQN93fU1IMGnXCosryf/4uRhqF+OCxvYSOgdIdGP0impZCgY6MVH0sWE/aPlUkP7Dx0cQOkDgqg3V2yLuyyWrQYX/WsNL1lUBCMUDpQQiG04loSI29RaVNl+8EMzirVAv61Fs4zFMfBbmpFMm5GSkVbsRzVEjIfgUWstw+i00wcq9Q8fxyx3ex87BXtv8uXwvJh8TVWUtST0WLCHXxxS/RigCPXhLbvegJLIchgRQviOB7uDLfjWJgegudDJjdLUerGV2I7eu6LUKIWZVCfDr7VeYp0DNgAuABPsnbbqA8Da6nDbgG6IT0YHC36nP53ZyIC8uedZTaRqjMGe4AjjRDPMRXtZif3RKK62GYYixAkVoutpWiSiizAHJ2DFUQrQQaHV6NMoQFAtRWol/zF/zKr0L+KFRM2bIyV7m1Q7nkqUvIY851+Pc/5HzZRxJDyCGJKWcOx90Qtwy10cvAiO7sK0VJtruNPxvTwDPhj2LHqAmJuIvsfi2AknA3gJNdYDLXw90DO/+T5pnjYtt6qTvx27cjhto1jDHC1hl4nFOGdU8DF1dCy8o4jiflkD6ZTySfAA6a5sLNp2JFkE9JfhnRa2hUdbCgPpPtVo7neDuyORQ2pS6a+yB38izV+kyxRTUG4tHDofT8B1IESHela/es4M5ggQYsRJ6Hn+jZwe1TarB+FBgJnY4Wui2CPtHE6aLk6fpGXAv9t69jpt5XikYRF8DCnBhVjTa1Mmtg18AuEcb5Gs8VMb0weB06nWACcZY8zuaGCeaG6qdqFIady1eLgrbaW2osbaVqrtyqETjdw7+FR2gqyeG5DWhQvhNoGJORYLnqhRtj/gIOEkW95ZvgT79zyxMjGInGW/6a35gGBOWap3C34f6UfjFVD+oGNKqjPQ2W40ON5ksi7Fx93jGN7NwH+ZaSnS2yePZiosaZjknkmvs/0AE+ZQ==
+    properties :
+     x : 6
+     y : 53
+     width : 354
+     height : 38
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         EDT_FILE_BEFORE = fExtractPath(sCurrentFileName,fFileName+fExtension)
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : EDT_FILE_AFTER
+    identifier : 0x274577e2167ab0a3
+    internal_properties : CAAAAAgAAAAlbs53QH4vGqmdnGwAvBWwfZkv5+hzNTe9OF+dIVNG06sAeQFV9c9J0gYxajwtV9jGCkTJtV/l7oX/hrvRgOAWiCaN2ePE62pexdVFfiZj/A3/F50WW9ZLnG6vxDjk9qOhGxybeo/UIx+d2Woi+MwxO0ypg4z7ZObJZEHx4Q9+sFy5egTRF2yy9sXLK4hw+uIGlPp49VLgbMd5Fd6ODsltJHCghTKG1gBiSfFUelS2m63k2O69NbqFn0eyAqt0ESNI2a7U7qe+1BVnrpmPF37nnr+X7Qs+L8HD1ZK8b/7+FiWWUyXXbnDHDcdwYZJf69sLDtpOkpcNxhNl7v6Sxk/A1i5yGY4ESPXFFwjNwlTiwyAxvH84YaHDrp1gMplTIvbKf2lizMsB9SKiMrop+Rppkdax7N9aSBkL5uVq94FGczgvZBiVBdoeL+VCZod/Jg1DcasUHYt3ZvpVk1J1JHXZbrup2YyWWG6G3fBYj9oluzqYiwQoTJv8FFH9GApGxmHVXCR7bF0wVzLm+V+K4bMorfbN2OXzp1FLHo11Qe1EGkZcxoFZfZ00J1dsbLUWnVXtG+WHjLtNZw3vL5CUdFbDeAN+MhTN/ZjiuR5FHuU4D4tcynWQctrUAseMx+opvS+Lf2d9S1+rEhULOGA05fzrkgWpxXQmkH+EWKA1ms41gNmnCgYRV75WQBtqBnPM46CQgT7PPqFq9nSGFO8qRBPrSpcp6u4z4GHEIEHzcBO9N6i/92kgPBkItAjfCPiW2AzcnZcite7MUUM2lSATM7NWvyL73D5ox7n61qIXI9nHaLzCzPzM39QUa58LkGMufsROlPP19OjclMICcnFtdvTvInacmiydy7nG3CkptfLdVPmurdvluCM9tfnfEDOVxqq7nvos+x5D/+XMAVdq7wAXxRbX27iv5Acbzy1kJ2w0GF01x5GlsevykvGqAiC5LrIu6s+vZqXFI87b4292CwgJZ3OS9Ij6/OarwOYW9c3m7/cyOM+VKS7UiBMxQLNCivH9yv7UrjIN6XpJpBVTt4xQe/84zmkYka6bcGW0fb8Sm2XfZeNRzLfHRKttni5Qg8e/nYXXNrD5uDoRTRNSeoPsAv+9QA48LTUO6add2IkOx16f2Zq6do5akm9uq6ZmdEwTkZNHzTDPGyDyYqzo49WdWRIHnruJ90iEg5nb0NMEgLI+b+tw2O7m9HCf035YC9VA7zUIkEZ6m5iq0Z4l9k7bWC396EzJuhp95cTy6Mn1faY/fucgH6mvJ3anidu6t7j6GLJOJHaKyR7dlu5s3MnYhjsvd2kIC+LPqmlgolv6CAn/QqRePHTqb1YHLK6BLkEFBPbMD46TYytaloiNWD/43pqzNRnf1XMeP3D1GIrFXHSp/IyJ87XpEaBT/n4clow6kBS2gg==
+    properties :
+     x : 6
+     y : 94
+     width : 354
+     height : 38
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         EDT_FILE_AFTER = fExtractPath(sCurrentFileName,fFileName+fExtension)
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : BTN_CANCEL
+    identifier : 0x274577e2167bb0a3
+    internal_properties : CAAAAAgAAACr0UbQvZhmQs+KnLaxodKSNXlX6uXwklR7Caf2AMAytU5JPIYSaU6/mnTDvTOLEW+M2M+C8epg9haB7p2O3+XtdkL5XsaYZsF3NCekgr5eyMVyFY6SGm/Tayi4qupcq7WyPInoHbaVRyHXdn1dLFIgXO3jOrZHwrR0mUpnBXl2yLWIovNJoUEMNZ+j6lSikh3So7Pa2V0lziB3ZNKai6hXIy/25in3UlXQRM+Y3sZJlPJCh/Fydkwjp5E5NJJyOUYciGvarMJ7O8jU8qh43BUJlyK9d7kRpTZP163jEirk0nxIm9U5IU7jwsghVJqmlZ7vkhURtlSFFUXb4b93sNp5Wdh67MqOPyGdCJP1LHK0Gdi2h9gQaFMwiGF7aIp2n5gMXNdheBEfKJSo4IXzRyHhUl9xn+RP3aXGFxjuAUPEL7fvxfy3BuZ6EkA2fgTtbWetlXnJ6+MMpzpWH48CJxZQ73azk9Mdjl7b2zUw78qsctHwwXTxI1oc6QtAGRXsccjojCk6Jxx/ytpHE2K59tcLUFX828+aXbO3oIGZsYpNWWQhyS1oMOPeEXXfFm0yQTQ6Mi7XLD79sq/hR0GGWYNd9a9nuGUjbeALQ4yVwFaZo1PIYwvBdD7xj1oSbFdpPp952cPHCP4GwP4F2cJ1L5JsmHiQvLN0MTCVbvatzv2Xgbt3t3DGw3HDcMXLtPShD8OtSlHgwI9L87sC1x1MRdsCH5RjuyAf9QjZMy7GUd6iF5WxJIHvXigh9XP8d77TJBTas4LqzV4vwbvS3gV8Ca2OZvkqgXGu1Qjb4amKMbHf1S81Lp3WfvRcct9RQhKABxjp6ID1iSCI/ic9UQD3xgqkpAdD4/hPg/zF/hydeDZJkwNp+B30w1UoTxDPqRxIRWrgvjTXFaBaaJV7AeniEwk3kzcxC9U+UI3/U9ufv347Z9IaGJSVJw8x2o3QN8/gGdqUsfS3MSp/ak96/PyDWj9DNDS6MJ+Lk9ITAL3+syc+GPxjHVsCFJRqukKK
+    properties :
+     x : 279
+     y : 138
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        code : |1-
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_OK
+    identifier : 0x274577e2167cb0a3
+    internal_properties : CAAAAAgAAABrAV3LNagFweXhKByfzW5Hxy4gXZLHTHv7NvzpZuJUUcNmNFn8NBQStEW9Cs5BLeDaQFGyjlVlYDCpd9+Ga+1qZWL560hgDKRAmyUq2Z+mr7xRhP330+7nAuc3neSIg3fMVkSTZpEOVeT5ISwIooyonIQGf144bMcTlES2Aqqp0sysLKmqmKK1DZQBifWMWDYg+A8aygBmTdoEPZM6v9MxHGIUclUnwLnZdps2yWgRw5Cm9t9gLOO7U0e3LgtJ87Uw6NveW9I6Bjcj3wvq3tTRC+hhUrfT2tIzF+VPmyYnRPkTFBD50SpsfKeQF8qjrSaIaLjYOki35Kma52YLJB3OmIIicmc8Y5Qj3KWS5upAyErDS3V+v7XjZHbnYZnKByaV8EeAw8kWk02qwzdUVQlWN42s0ZALDSf1u1JXMgZO7i5t3CiULCVSl7nqEHNQB7qfS1XI1Y9/VXNnbB27se2SEyigjBWRZSLn9Lh/YbKsE3fEPjvjz5m9jJlBBAhbKZekoknKmRHftHy+3tUOCijRGeo6vXB/zHWyAO1QBWYwC0/Bq87IJSWLrI6JjrXMkXLhC7v4GNmEJNuqWnEKTagjLru5ED4Z+Q4iUT5bGnHbybe1R6T+A1ROrmupAz1Kd4NPvKK0E6BUckHwJHAJSOEoGu23YJgNkk0Glg0TutyNOcpOYbkLi8stVYYNjh4x3Zcp0Kg6yoIiPFSMcUwQhGalM7xwAJsV5PpFiD97uh/+DjUeM8oZmE3XsXw2151Fhr4C56syGCBkW087BvhzkG959DtdHbhhEVp20aZescdsyWLhPCzTBbu7itpRJNODZK5+v9jsABoz9iWnY/pQ54HgEnkV1/4706BRbaXopF2g6TiASasCnuxbjR/NxlaqFwNBKmKx8YV3N4ZfL7nWU21nxxMswiz5mAOGkDmHyC9pXZxDHzUyiDoJDq/EKa+ZTAVJJOPoMW4JCYC4UNh1GPE2sUL3SDVZCqFMq7nNWc3No/dk6A==
+    properties :
+     x : 193
+     y : 138
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAD3PfhAj13+e3Tq365W/blzvSGdoN6J5K4US3kiB8bjYfoY0ANQmI+kHwpltaxV/4XJzvToP9zvc0FAUaUEhW3Nud9GGA0xCOiIYt4jowi+e0qmBhgGkQ==
+        code : |1-
+         // Ask for confirmation
+         IF Dialog(StringBuild(<§$0000§>, EDT_FILE_BEFORE, EDT_FILE_AFTER),[<§$0003§>,<§$0004§>],1,2,dlgIconQuestion) =1 THEN
+         	
+         	// Check whether the name is the same
+         	IF EDT_FILE_AFTER = EDT_FILE_BEFORE THEN
+         		Close
+         	END
+         	// Check whether it is a local file or a remote file
+         	IF bLocal = True THEN
+         		//  Work on a local file
+         		fRename(fExtractPath(sCurrentFileName,fDrive+fDirectory)+fSep+EDT_FILE_BEFORE,fExtractPath(sCurrentFileName,fDrive+fDirectory)+fSep+EDT_FILE_AFTER)
+         	ELSE
+         		//  We work on a remote file (FTP)
+         		FTPRenameFile(gstgvcFTPConnection.nConnectionID,fExtractPath(sCurrentFileName,fDrive+fDirectory)+"/"+EDT_FILE_BEFORE,fExtractPath(sCurrentFileName,fDrive+fDirectory)+"/"+EDT_FILE_AFTER)		
+         	END
+         END
+         
+         // Close the window
+         Close
+         
+         
+         CASE Error:
+         	// Display an error message
+         	Error(<§$0001§>,ErrorInfo(errSummary))
+         	
+         	// Close the window
+         	Close
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_SUBTITLE
+    identifier : 0x274577e2167db0a3
+    internal_properties : CAAAAAgAAAAuDHnJP844WapPhuIhMLWBM919DsKhnPooTZgHO16dARMdncFz8/Rr9ImzflDhGA/n0ZLw6GYobvVgXBXVeZIgeZF6DmVWWW/jp88Ybg2Li+mn/qOCatexc6g+7SDBRZ3et9kLVnGTGkAl0AyYg2SSYltv0q5unxQc9fLAW2FxMwBJe0tFn1XbnaWb5s1TZMDLCaA2auXzz024wHEq1iaHfvTUXqnKXlmJ1BFSZDjVPyHKCqY3OZqdMnUaRSnJrG83lbpwsMACskB/SFF/1IV7NBwxpel4wxPWc1H+4ucV0lijK1VtN9bupLyeVBLO8DnCzMJQmOR+p9PCPaXY1mcwlys+lhGz24s45DuEiVegJMkqpqAtiMJHf8W9QduX2c+DxD93n70keJDbP/unGAAU6OCzXbYOlSeWAf3T/6PjNRdP74eSCHOH0V2ICIacPpIJAhLCMv8FxberJyY7kdnFtWgigr2HHIhAO59rUVJcXZGEogZ+RlgztOQYrnbCDhpvbcblKKctiSTmbwuCnm48C6sbZfds4xNuyOBuUGvFT9sf
+    properties :
+     x : 4
+     y : 4
+     width : 347
+     height : 29
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1+
+         // Runs the process defined in the template
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x23e8add126f4eb2c
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABKPdI4QoDUOQs5IUKNkotmGZgVaocAFFXEzcQ+uB/WQikdFWDIiv7Ix2dsDDpfZx8n7GQgsmhsuK7EXPGPLk3cXs0N4/MaSy+cVFAo2vYst65feqi8HLugkM4Xron+qbo=
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAAVICWzw3Vr0Xj5SB0+uwZxU/hwwAAA1ypVf01WuX++h9Ou9vFt6Jk+89XvZIt/LfVqiD0oF9NbZEmSFDBrJVXge0OZrAGLP3FxR+Uxgg11IHW4FHzAjGN7C61C953B770xKAGK9HYWGw==
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE WIN_RENAME_FILE(sCurrentFileName="",bLocal=True)
+      
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  templates :
+   -
+     name : WIN_RENAME_FILE
+     identifier : 0x1557969f0267acdd
+     code_elements :
+      internal_properties : CAAAAAgAAABKbch/s44i4Mq2ucV7u4BmPXWl9BR7GA4zLumE1HvxIoyefh3FSw86tD+fNtYtUz5LCLJ+Nvbcn4reJ0mpk7GS4vkfKu+6hvGZtuOHqXirYZEv5fXHuTBnv++UdJ8ttkQvyw==
+      type_code : 1
+      p_codes :
+       -
+         code : |1+
+          
+          
+       -
+         code : |1+
+          
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+       -
+         code : |1+
+          
+          
+         type : 2
+       -
+         code : |1+
+          
+          
+         type : 11
+       -
+         code : |1+
+          
+          
+         type : 12
+       -
+         code : |1+
+          
+          
+         type : 17
+       -
+         code : |1+
+          
+          
+         type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAABAQoHo7e0KLUuo9JVZHxjriK9OWWJjRo0FLLFVj3UVI3LlcnspdTXUpEc/fJitualOAJHXbP1C+JSEwd7uhoY+PpKBWuHE8Qdw5yigYVh9BFpmBT1Z9pqZuEaKFMugWVPqb6M=
+  original_name : FenRenommerFichier
+resources :
+ string_res :
+  identifier : 0x3adf00e522d7f3bd
+  internal_properties : CAAAAAgAAABYKp3KBci7QSSULtu2KtzNYqygVd9Dt6eqyJwtSaB1ofcXGciKNhQ76Fd0dKQ+6N8/xw==
+  strings :
+   -
+     text :
+      en-GB : Do you want to rename the <%1> file to <%2>?
+     index : 0
+   -
+     text :
+      en-GB : An error occurred while renaming the file
+     index : 1
+   -
+     text :
+      en-GB : Yes
+     index : 3
+   -
+     text :
+      en-GB : No
+     index : 4
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

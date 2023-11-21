@@ -1,0 +1,1208 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_CONNECTION
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_CONNECTION
+ identifier : 0x274577e0160ca9dc
+ internal_properties : CAAAAAgAAADIzjIekiwvplIkWkdiSb3oBarnJIdhW/jsBiuQE19AUwk0kG9xAH9Un8S/XvyfPBoWwvjU6c5/6igy6gtD/3SXmNX8YmuMHR3M3H9n3Ey+JNQSm4EqFfwf4+/OFCpiLDFPmo/uiodE3rT1cBFOwnaL7y1UxJEmCLoCR1e0UPGaOzumj3NOV9en9hD7pHGQ1+dMsK4k3XrsLmOcGrIa1VXvzqtjMmb6icjd9NtHyJSuNiHQfw9M8tlruXTwBznATSepA1KEcPK5gD+SkUBndZBSwhi0nl0XDW8haK2kuKdHiuuWwNMnra9Q4Wp+OdhoqZcsXwhxsnsm3AK03YQ/umSeoIevBvL/vt05uuamRPod2zzDxb/YrdyCG+zIfxQMCbQ7C6Pu/d/E3KCtl3jMGsfzNUqpLn1gQQGc1qj0F5GQ8DNoUcj8uA6Qf4Q3ENNlMiOXFa9tIs/cMDs8HpmDL+6hboCjyRw0Q7XenABX2AF4IR5EYZSYSNPGGd0zo4f97wixhpqpX7RXHjzR3DpFYCB0/3NmXU+VKZfwqS8opTct9HWHtXQWzZ4eieZNaG8xY3ZeP55ujPNpyye9FYRyS+wQSm2xTNqLq5W4bKCAHpKPd2XIRxki67CDP3iIo+vlJ9HpsE19eYp9fJ1zRsu7tRvt7odzmfakqsVRItjnqWInLY+eXiPW45SagOFFjZErJ9dvlU6L6s6dvnl5urwU+zuEE0jzA2asPim+HR8YG8Q+gP/JazLV/4rGpeIsS7F3e2ie3cKpjG04xwfPyZulg5/xAlppEcsfQUBvQp1u7i8Ix77TLTwRv9aKKP//7NEolw8gqKc0P/pCTt79/kcejOn+UuhYXllwZL8ADB2/RkmGWnmA5l/3sM2+9OBQ5QURzP/u6aOgS7HaaW1UwGuguNqr7IBJnAHufgdcRBOAixcsM74K83oGCG5yG8YuJVL+Au8qF+TheAkmaxOCQSl6SVq41aPATyAVq5n1RctLwtABk2eJqMd3ABBVK8eZ2dePLbJYPc79jGGrD1CE9nDExZUDCbOrq2fJhVfBs2+3LRGJ/Yh4qCw4HVPOYh/wkoH75H6S/34XzdywVWSsqHsM83ZKoZm014me1WrEpxm+C5hsS/lQEaBEBBS4tFOhemHBHu6fv7U2X7K6kxkFQmmOH2eOs9yrLyarmfrXivopWgBYa8txF84Rk5ZLTTIR0qEvpVpn5GWiIiifOKooNWv5E1iFjFWMQ0YC3koLpgOaMZC2Mfjnij/TfPFd/oZ9TcCelcTgXZ6x4SSnDvtYofH0sita3W8vWk6PHt8+fCOTvEcqNtLfPfEqKcO/5xQ8rHGfkRDCYo6TppCrXFxXjeqwcOsv5I96haoVPwS14/jhkCoY+tW/VllZJl6uSuw6fHaGm2+6lOMch15CU7RAuYASe4uzTzw3Gm9O952V5ox1OG38Wznblwjjc/peGXwiV70WHxTUFLivB2OSsF4=
+ properties :
+  width : 466
+  height : 597
+  widthClient : 464
+  heightClient : 565
+  widthMin : 334
+  heightMin : 298
+ controls :
+  -
+    name : COMBO_PROFILES
+    identifier : 0x274577e0160da9dc
+    internal_properties : CAAAAAgAAABrPqJUrBgz9CeydMNsZuOejaQbmnbpffU1dzwzH5mLDa1c5H/W58IdEawrPvj+/1ua5tjACjSEmGvfoyt3t89XFQ5+TEng8FBCZRA1ZAYxbZz4Te5VDPuYLyeyq7jlVMyNlrE4rrnlYYN9pE266Z43weg+GvLo9Y+bhJGsOo54KuZfharfQ4Vi7jEFgCKc9XhSkr4Cr6CcdeZHImWMA4pvzxnweEirMljRAPkgcE1cpwaKYrwAbnz0jRe1d3yDKl4/JEvHpU9n9pmwT7u5r6QVBwLdYEGmROGpkJsdOC89f3vroYo0UvfHn8RBCtS/LCeGG303AD4Srgnum9IuKFrLOKNrMM48m4kdVFEMKbjh1Uwqm+3ybnKFd8l//swl+D+CL8p4Zw3OovBK/ZEzZ8yc7NfdmBCc8bNXDGNCCotKdCXlUpFzTwC/zoi7p4pn0Q3LOURt5MAFSXbi1CHx9rXP7zGI+9jtV3cSQ2VG4gJac52b0uWtoD1cS0BRcFdX27OdGwXAXs1dDviNJu05s8p4rGwovEDX05+ZPok46r6yMovzUks+ItoufUMI9G+sV2Qv8jWv9B/2xt7IBshlNrKkKcNhpL5c9QgkcmrHXjvqBPnTqq/CI7zzyOtu4GwFkvr/pI5HpI31ET4pPCT3pxnguTIuyhKY2HdN/0qb5qcf94XhKErubZ/3UD1/obeJaClqpw4AzTs3GCj1cv1rD5COnlR59yFcgvyHcsSk0jqMixTwqEo9EZzkQcRzzMzmQwy4NzNfTa3cn+f+uTPZxSQinz6X0vEmHeGIjzaLGDywMXApAfraCtEuWdzOCnJPS/clCIqQq1DBtBc6kXV8trOJVMG0a9jLBwO6uiXJb9cAAukphINtfrgfluBe+jchtFU32zpgO0FvN2ghOnIfE5xhUlnD/X8xEZ8+lu+PbQ3J0DhT2d2vVp4AxlpwnmNv0IltuzYIbxQrTuYUaEWWIwVUgSjL/WFqcS/GGvCa6QM5FB57cvH178HpVAvr2CDi3ogoMasy38KJGGhiSyv7rvN+cwbqdLe/tweqYrP4EdSqhU0tahT4AGhNGCAZD37Z4bn3OhjclMPRpDYxO5tJf0w2N7lEmLEjQUfiOZp7r6vicgXUuY0JANWYvg9d+c9JfkxhhvMFChR6fnhNcT7KBGVqJXuYndOx2fe0ZoEv2ZZK7EVevYea4YpFL2V7TrW+ueFZRnm51XSrvYgNlT+9pEpxKyKCBEM9UW6grIbxjyGNitbO5HTtOAGvI2gZC0ssCJgLZA7rBwE4GE95/lSK/tc9m+kaNB342a/fSJvve8mCoTT2doKX6oiAy3izH423VjGzCExM2ZdXO1pd4DQc5lDAk4leg8tZ1L3fDTlbe1md6//WJZDB0HOz1KBM4g5r3Eq6Gqftv7Ugdn+5uhYShasSUn+qR/1XORv6Dnzx+hrm+cvbLoMfScLxS3opzVIBbP9apsaXfLzen3SnQ94AuV+Bx9U7DBTL5/tEBPAk2K0iEXQ+Qkwav/UnotfF2/QgVBULdW2KGd+VOOiibet/B+BQpIkDdGYlnZHtupLAfuJnb9InqddC01a5LQhOSHkLNFAokomOfNR8STBRXTLrbvtc+eG5PaFMGHizQ9cFJSTUHRCSLO5Y4UmV5vopLwlWdwXmrBvaE8Q6HvzHaBHp2kigQm59EhrOxNTi7k5FXsqtGI6MXIQAbGaL5utn7to0BwCZ+jIZG91fkrubld/eM69D8rQrM2/YbofWaPOYmgoyds6+r4HAGHajd95md/hjMiCQFibZJwvdd/GgTHa/kTqCzUvc+UCj89LvAso=
+    properties :
+     x : 12
+     y : 61
+     width : 380
+     height : 29
+    input :
+     internal_properties : CAAAAAgAAABZ+kGU+SaueK+q9H0frOwDjz+NETMoeMSDHJwonpC8bnFvh81VhRSQHuLPDpDPUJWn7dNMYUgDzU7+7Li31LzVHnBq1RN4ZinZUzlx6T9Sbi76CUIvzLD3XeCryUZAinaaZbLlE4kkuZdWdRKCYGaPeaBEZAwYYFAjtiZSsT0MrW7ONCpvbK6mEp71E6x2hJXAKZCKAV99bm57rWx7r5UB88a7vNGcQCqC2gYTUWfny/XZhuH62AHK4e+ucwsX0IYFf3Y1dXhNIvD7GB6qz1aQT1onP7gSQ/KRF3w47wmdKN5EBT6C/SfWlZH5+QeJTMtnQXvYxw+xnneSgFkSN3troj6/7nj3mXcJ1M5CtDa73kMI3PJJd2vZt9hVMEPdNJM06Ja9mHClkLt0mXBXAwaqhkVXC8fKl1gX6L8yURCNmuBgLfrb0F6Td33AIXzCuBqgLTCaAduSDK8RU7xKGNbejisKOUbSufTfAxRfbPQYBr5sf9zdCE02uvl69dT09OFHnEvNKeF24TVlHi36LfvpeXWcae6kIbHSof6q8NyRwOXenzSx0pyDxDUBWQ5KkIqlqdnRAvkD1sPWfcxMTKY=
+     type : 2
+    dropdown :
+     internal_properties : CAAAAAgAAADXUEb4wRbqhybGcCK7yGNMC+LTzdN20LQX1fzZ2Z9OPpz6Jo/XMzvpAUPDBPWly3jJzLxhtifZRB6L6tBO5BvsYcRUT+sk7qmiG04D/tuQexeR2L/5OeUtN3F4kz7+VzbcWeTuIDn5uJPp/ZGRzYqDCBSugAdBgC85nQORbR0vHhtYfMB72trdcrfCK5lX2zoPiJes1QkiZplpnPFAtMtiWYZgNkkoqix6gy6JKHcswP4o9V86rBjIKn3AMnI5k03MCKsSWy0yYU0bMOl//KrnwXHG4k1Wkad/r3NTIf16WrP2Bh9zP6M/aJkRVTkm8cqZ+bdNgN8v1D3Px91v060HOrfSpXlS6BAmf617ka/QpZNHfVXLJ83TNtY1fYGKqGBuIdE2CVIP3J+OA48ImXslxD/74UZzsPpfEkCS5H8jafwMKcwgO3HztsVVc6n4ae8YlDDHE0NyPShT7kyOGCQoJUkK27eHC6Y4p2siPl2HOfKME0Cy+P6cunV9ETnkjcMGtNUTPfJ3MVVw+FBPjCmPPHk1z7/QmWjZNC4bEKJssDSPCQVVge7V+TiZWr2TyV5NsmxCBb47eWuX4o5deDMfM5IDQptgIbog1z7r0HWiAbtG553Kck/ZaCjj8SeYK9KPsvC+5w5IVOpWqgmDEJKuUPhTb1x/ckeJ7XnUUcC7GZ+SX9orTpdkgYBNdJHye7s/RvcvJWpLenMrc3Uunu8+pdteaEObrRtJtHVGDdrbEFW+8BYqFf8Kcmb1mGCPxghJwPWz5HoPUk24doNEYw==
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        code : |1+
+         gstgvcFTPConfiguration.gsProfile = COMBO_PROFILES
+         HReadSeekFirst(CONNECT,Text,gstgvcFTPConfiguration.gsProfile)
+         IF HFound(CONNECT) THEN
+         	// Use the existing parameters
+         	FillControls()
+         ELSE
+         	// New profile, clear the controls
+         	EmptyControls()
+         END
+         
+        type : 33
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : EDT_SERVER_ADDRESS
+    identifier : 0x274577e0160ea9dc
+    internal_properties : CAAAAAgAAABnh2jaCosk1dZ7Kq3I82Vio+iszqph65uIgLl0fly0gLmjtR+FWLk6VQuo+I8RPL1Id3XL1eoxxeBfIjQyFjFFazg32EsjGpr7AdYaku+XMOdnjemlJzvPjkJBUyVeJ5EQ+7ntof285VLEQsKMSm3NkR2RT3+eAxqSLpZbItnzsEeAG4d0NSuTQf6F241KouKvyDapsgkAe48QNWQvBMyIiyYBNlauJRkSzaG5Wgq0knWboKCqDK2HpOku2EtdFLmBEl5jGy3HzYUAo/k62QH6nH/L0NWry/dS5HK8WVdZVyWxtoXVRc67Nc/CWi6Y6OnIamRkE4G1ucfBzj5fh6CvVSiChkJw+d1TOCUX2ygZ7duNttTVm+AW9AvYsML4al4YT1aPCwloKvzPT5GT8A6XijVOR0j6X4hKvxFdYe+byCs33Ygu6IUQTjrXDWxAsOwUrpjIFeLpfneMW83WH7Tq4cX33B7wuLryuPNYFSYuiWVeHdINdnxtnomz/Cx+ytk8EUs9IvNX2uY90hOKWGbApiaD9Ci74mhTS4+iaKT+xx73bI2/+mfhwR9+41dhBvPbclsZ5zCwxbGwtF0zyCd0oew0eoM0+zyFnk/YoMUlFlxyjMjPf/NzVcCTLdih6jMxfUQ7ra6ylD9z0gvUDv2nM/cvWwsca27pAM9c5ITmWYk/lx02prkivE1gUY1gQ+x+AXnj7uTtwN7mFlQfTyKTuJJGDOhcnYE1oUy2I4jVXBMfzIdwF+CX7M6fvabZBC9ZF8Acgyt6pcTrQquj5ph6eifLIUF7o2yv7I0HI4I1BHfEBpan2xqiLmkHUXKqdaVvfESFhgAYzj6ar7cqzYQHMPYFj4/M4jMok4YDcBsUwAvxsJ/Wu6tnjHbyuY4ocwF19yBnv3axsn3XZIoMeDX8GVyXWox77NsNPY6MvxoFfO5wtsw5MSOq7sFuHow1x5tg5UQfRb9pw5Z84Bu3XFbGl6XENEUYW/clN/vOUqHTrFtdMZDXfFrTB1eEGNx8exZl2Eorq6MTKbJsqET47dBNSCeZmtsoEptbPHIwAafbTuQnhjrGHrnWcU3QSlCghjA9+YWpkiEdBc+VvB+TCdPbD7HPyRB++vsbk8+Ay2gJDX1oKpKgwv9hPJvHX4Pp/cOdCgVhEF3mxBAW5Pt9SN8gRBdNHNu1qtzCuWR6BXjx9eXgRM2R+zn7sYZrsmQ6Yj7g/gx2/pySonswurkF+aPJIh8SjgEMOae+crKI+aKQgFgtCPKhMHkggLUBwocHkGl1bi4U31q6iWv1I3QaVESH5q4z4q229/1uhhJZS6LrftZ1qCV3/tjvJb/enqWXIaS0JDFDNfobfGj6A3Kxrk+WYLfE1ex9+XOgvXA7tzLvMuksP/WqJvZFZGxErlfRRJwjwRSi5ft5NLwvES00kvRTCLOJmlqCCNBQAvE8Gw4Z6QaB+DuNd2wY4R3A61US1RUS/iH/KTgFjxE9gb7MKX2ucN87qIfVCVn6aKONaHI+M6YCeH8sh/8lzw==
+    properties :
+     x : 14
+     y : 95
+     width : 440
+     height : 40
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : CBOX_ANONYMOUS
+    identifier : 0x274577e0160fa9dc
+    internal_properties : CAAAAAgAAACscth+VY04ZZGQq2JHvZq0SD4sMnLjP138Cwmk9x0r4mDDGrKKQe/oAJKwMJX8WvgITzacNxRFJ3mD8dmn5t3CI6G7pnjng9/zQhjQyPk7pTaf41dROSTp3/amf41A20Y8ZN/BIw9wHcgcSUuWCT8puXrkiSdU0Pq549CLbsDKLXUz+sWHcFss2JexrOFLBG2OvHvHJ/DfWejXoAZN8OmzvMDozleUF/BiKr8kHrV3wH3N1u3o6KOVYW/rF6G4yvLGWBupV8mMwti3Ou/8fx5mt3w1xkPxRbmJgbrI3AxBsQQohv1scxPmMIvStSFPxOPaMn2xD71ZQH7XNsX5GDjaE3HVfMmwETioKHTDkg7yM85N6C/xySBSlFtGv+s0f4vWG/vl3JebKgsv32SZgCzt8rPcSwRE0vAU9ltDBmnhICJ3MONUB0ApiNbq3p8JAJfwwtcxNw6XKy9rPOUM0qYmZkq1qz4fdTlWxOn9AfQUiEvNxpbtq/tBJK7W42CsZsry334rNGkkPsT9DD18ykEI4nKp/0Xk6DxuAw8SjEoyiKn/O2d5q93UM6xQhuAGYNgLQVjZzmWmLzjEEedAqH91VZ9TmfAkgKUoittjTy7u4UHsMHC+6ePUQz9gQ78VveAw2wMmdVRYFnYALfgHS1Mr3gJk/zZ8rjrcEDapWpl4p6c2NV9MD+HXBgxEcbO41cpJAvw28W44mMIQpXKJxObboiVAmdZrNcwXBVeoKQpYjxcYhx1XpaNt1xwnEcMlyzKA3jFfbxwhfH0H6tWiyRDtGBDnlA3gUMawkwWdvGFrNWkgmyidb/01PTSRS76paNysxGYLkWUBYwnZyjs2pst/Kiass75cSpFIZLCHhWWG+zzBFGo9A7lZOzIMF/OEwWJzEO5UHc2qBDIdTOvgVswEr8bKDUZbq2dDBheiq7JIeO3ca2Sbl/uh7oWx1iQgV2dVMDqQSNUAK7qPe62uW++qlthPFLGGj+zZwQJwlMnMakryEdaM3MP2kIWvpu5VV67Yh6mX61u4DK5VHJ2YeI+u1WuZQt3SIjf2afmMeJ2xHmWSbMyDrMwcD7t6LZ9qLEWJS790GIZ/oHaB09VAK1qw3ymmHdnaoQQPnAuEmy2uMsbuLcKgYsLVZsl4zl3Ae4koqbD6CW6V3SucGPM8jlT+t8/qEYVQvB63CNvALNm9SC5OfIK5E+CdQMDL36oTS8Ojktg82OVQLSwyJsYQH/KOiJbiLbdMJIZ8
+    properties :
+     x : 14
+     y : 145
+     width : 323
+     height : 23
+    options :
+     -
+       internal_properties : CAAAAAgAAAA7s7r2lkNrHCy3GTDbyPtqfDvidXbCfcGtf0fZkGFQHnC3aEmPNUKjpYyB+mhpr7LCI1Kn9vSEdzMiKMl8mQWGmu4WH2zRKU6dlf6Y+r38jEwtgAoo17roFK/OQAFm09hqdb2Cnw9qOOsLU70tgrv8T3GWFVXCScD2BJH4BUrrdePyWDi0zw==
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes :
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        code : |1+
+         IF CBOX_ANONYMOUS THEN
+         	NAME_PWD..State = Grayed
+         ELSE
+         	NAME_PWD..State = Active
+         END
+         
+        type : 17
+  -
+    name : EDT_USER_NAME
+    identifier : 0x274577e01611a9dc
+    internal_properties : CAAAAAgAAACRkizgy1jXf4NV+o5pAwl9/n40gipK+fpsY7xqj+7HCdA6YMeyqbhunfOxVpoypGVeM3fmK7iyZgLL/SNpB6zjTGIenE5HnZ7xWB44oQSq6r9Nvqz5uVJ6hFO1YyYyZy/VufGyVusMKjYZUqCu2asesstkwh8moQ3HtflOjwyVFOpVaDuPqcGVyjPxje0rDffFMG9GqWagxSFv+XuxLTPNjdL3OXB2iskMqctmnZeJ7GhxC389wLx1sDuCZjIo95gWVlWCc16OSoL/Ez3BAuJu9E8+FpPniyg70lJISrrsdZj+Oq84TO3h4d3uDr3f23LDqrFkcgN64DSjcjVUw51s4hyfUrMw/HPcqHpTMVTLxZAlCLjk0xa4otp9nRZjWdzmreM47ZK5EBm9510cJtesxeyXY7kif3QdOfgU0WagKABf6MO5adH4ije2l9gTA2gz83ubOS717zQA7Ue+TeiN6vKJA9wH5H1BMnQBmvW/UewswvYLZIAgdsREgULbrA/u/25aOR4WnLqEiPQ5steO9HOuMNbg6maEgyfRPtXOJ1ecdbQDzXBpsCphj6BoMslWJyT6u1aLBn/DJZvkhVlsKCi5R0xDHgOIGFaUq5EmXDZV38RwiLFM/kQlb3o1uKylPUNFoW9bs0ALOtBixmsUW0Dz+lxB7QmZeflX+eNNffA6kwiG9M3wiFPYV7uzX1NplTh6BU2NqgQPrCOUtnwjtQrWvNmGXLlKEfAdBaD8kLl7hwAs23wRRDlNSVvBIppZPGA5LAr87AfKQEAfjG1ZsZs4ucuvWiIT2Ce6SeL4GbGBpEsm0L5JfSMHaZI358NQS0QlXndravpQkLKSmJnganuJFA0ZWP3tYuYHpa4ujJAP1iiUniq1nHuSqEHBL9xMHrmc6Wz7Y6+4wReH4Wz45TwADISleHRW7jzoJrzcz8ThVSXwZ//sTtz26djBjA8J5X/Fys6O9nrnjV/0VyCjl8EzAF4+z9x9lt8faFSshWDFL1mpyjWZ3zdcI8xiOymVb7HGPc+3WajEhy+8+RXdVu4p952a5zi19LRIbrjeNQvtrVSoy5ARevjMXxIeALloadfegMhy7AbJNqoLmSqznJA/RhWgXXGBJUTuAEkrFLosTPCNIzr348ZAMlk2xRH+E2R7dEESHCWpFSP3F4Mmyrbcw7aJE4TPzdYFRUaDSSI9wJ5cGXM6SYUcg9Zfg+PETSrBm8krcOy5OxMujZMgcXtpDlbn2vMvd2Swqadf7HWksmwJ7apLuminRE6aQ2XY3BuY4uDOdPrOrfLTQnAEk54xZiST2U6iSbudJ7vNaztZsEMlJ8edaM1fTkDQbXgERRopfYMhvlZ5ntiYatx0msyr9I5GLKJJrMzlo7H2AEX3rcibx56ijwqiAm46x5K/1BbMUjLXP6lSlGX33QFjq1MBUquuyHswEVqvxa8qxisYSANcZIrWHgfygya8nACAcfo/2onCh4lL+enIexbbd2ztXUzSHHczX/RcrZI81DHZSd/Bug0oLnI2VYGx0GOTu6u2J7bru6SkTFU=
+    properties :
+     x : 14
+     y : 174
+     width : 234
+     height : 40
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : EDT_PWD
+    identifier : 0x274577e01612a9dc
+    internal_properties : CAAAAAgAAAAk0E2WazIk2QwDvxiMI26JmX+G52jv9oMXqNiwdai+Oza2EjA+EiqsPnN8y9h7bv/wAhPHSGkhZHxmYbQ+kBC1udNMFnaH3yzOmthl1JT+/VA8L/y4nNOntEpl+pE/KV1/ZSFM3uWbwDY9P4neCfnTssZ4XPw0TgCG8DPnJpmawtlPwZY7+Lje2wK0FxE5fgTWPIY7eI0ny8+dbhe/QayKuVfF/pqEnepVQlXFHAu+kXSep168POGTno0VESCeHlu48/nt+xUP3b0Fb9PpNmjGPzchDqoQD+BxzJ/F8dcV0TH60FTRA3oAfiM5ZSLxeejQvbJz+APHQob0HiViZkbrfbEXevTBdDim5RS73uhO59PsNdZI95OyXEdVHpalP/T9XIj88ukBxmDCV2biK1I1FHLlPuW5Lo6H6YNwa+dru5pk270F+1SwmL0lO4IDKnINMPxhQ1JKquznAuMvsNhNoaozp/lPVQzXWCnBzCBVeFjAdZrXM8oeFzxB5zFxeyvGNLuZ3Zg3N7mOJJzsivAhKqzyb3x/a/1DhEoBx1NLoJpWx0V39nYsswYouozUoTWcPibuenXbSZyO1dUitAqEX1XOtuiAEwDlI4E+HvNhNQ+taRbjq3P9Y+lGl2ZFHIoYqEjfTu3Nn40jnFnmPuLaxjtgIlf8Zg7dph/yjkmQ3e6tgDLmp6iIwGsnpfZ6y1MKQc1t1YD2e4FSYTSN3tL0F2fptJy795sN+kCUE4/plTl6HivaEZWWmalTO4W90ptvhILnLA+rjdr5MSt1Rm9kePtSS4SXL8o6clLdKHV8tKkQUWZ2BvEfmaB+bF+lo3/VAacv7YCUMZyOO+GTNRACgTO6EIoCdqMG7+lasHJ8LKOC7EKCyOMPxHNdg2LtWTBD355uAIh6td58bfsudqCu6BPVA1x8Z+m2P7CSq7VMCyCuPYGzUBvBEuxobfzRJcFMea4v3YUuIbJSuYAd41FlxVr4GasCRAr4ybW2xDX+1qOyCWykttNatT2fbkMRg5j6GQkKvUopvEokVfAOTXcgqqmeAX6N45tFmqQ0Wz61uVIKWNXKzPKUScs/mcm6Wo80OsegbhyLAd/ff/e/m7PT0hY0kXNgcfdcyu0jhn4lV3elRumL9eUSC1FRvmBc6CAu49VXckFbFbFw5coH/pWO3Tj/atcoOUktO0ijLr4+8RMqkPxtUZGl204Bd4uxPoAwoMEuvA21QJzlI4Ako7cu1fSHhq0H8jEvHJZP04kC/xkkgxQZxX8YuqY2oc4iPDbaKCt1zeVM7b9vFLRS3jYMUOFYGOSbzjpnp4Zy7RvrRQgSDHSUJBTbDb1JxhONJTe74S4i6j51UspS+mK8ZCLxt6hz3wBsVuZw8/8BlrGVZOSs2OoXXynsJX0Ta6dLuksLn3QE8ZBZFWP6eBauFRsuIC8169MF5qqEkCaDUTanFB5r2tcim1XEPP9nDy3jZccbcn1lAhXX802a6ABaB3HjdYoJj/0MWM4wUxw3Xu5ISzE1
+    properties :
+     x : 254
+     y : 174
+     width : 200
+     height : 40
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         MySelf = gstgvcFTPConfiguration.gsPWD_user
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : BTN_DELETE
+    identifier : 0x274577e01613a9dc
+    internal_properties : CAAAAAgAAAB4OFNOvitELxVZMdR6hhCi9fu8FdgLzIX3sBBcTDdTc+hbk02/xJ828+1QX5zlm96Ol4OXe3LnR7UQ5IBSvW+bHCjKbvGwnLSI7Jf9kEq5i/EJM0cdgf4C2J9dQ6j+Y+Yo/NerF13yIX0mlDmeHifAZduZle1kT9ET9xld/hFzS2BsgvT1/BAiPLa73r2zV9dxy7kqAAFQZ/MC6kuoPoNL25Xef2Rf3ZxjG6QeyGc6hRBgHodnU/6k4kDh4xjDAUZ70SjqPwu9G7WB2JuSUp06I/xzM5oIWCbZD8DShksrD1RW7hw4M897IM3YHLiv4hgivHj9A5Da3H7VXQ+/nGmbpoYBQT+JeHI9CI1wYn0Yk36TpFPTQX8LBJR+PfKdneInIvN8+zQmkGgeKvi65w6hXgmF/MrOGuY2U3r36AoQVj+zOPS1eoJUAQ+lAX5GuebelXpWN8I5TAVGp/8Ye7L2eY3AD8ET/nwxwqwA8M4g9CAPxtP2JjLaS1yVDIomUefF4DGUcYVvvmegROs+vOoFREtF4Ho46hPqY0pg7EBQJcm563qJEjPICTW9ozlCJHTbtI9u1HLLmHUUZcpBgrW/Mn61E6bXRM/+jX8/9JhT+EZHs0Ljno2Si7Zrk5A7lW7A5nMFUKoPKP8RWv4V2shVmQqKrqiUbazLfwUgyBu34CzblZE3vTDm4Duos7N0zOfjRFRTDn9vIv+pFjvoYnZxXcr1HEBjgk9Ytn1LhIStSLp8x+8sgnLzryHEQ7hNyy6ZE/NW8Wx+81JIMDdXug1OiJ+gWATONxQKz9pw8/rZNszcSlop1l5DWekKGPtR09YEGEG27OQKIBvRQEUm26M8UujaRy9HKwLk694Z9QAFmp/7I9qpVzD3BAAx239stj+JYPHCB/Nsf4gF3Hs/+M1rBdUA9rENff6Y6OqstTuF41/7jXa+lG8o+UxQv3paBE4Se+I/J9E5Rd7JgL8sP1zDwtFGJL1K01TTY4utCPOHXna/SssZc+yTiLrkTTXJcdBiafif3iRj
+    properties :
+     x : 428
+     y : 63
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAB5u2yn9wxJVhFq52jMxyY/0QuOzEY3JwuJsCtG6PUpqXv2uDjlgtVhErnvtmxSKzzhHPi0xtoJLX2kB7i1u1f7krrrfl5Day0HeeFvkxU5Sdiyi6LnBh2c148UT3SUJNcmcmYcW/VgXBKkRR4=
+        code : |1+
+         IF COMBO_PROFILES="" RETURN
+         
+         IF YesNo(No, StringBuild(<§$0004§>, COMBO_PROFILES)) = Yes THEN
+         	HReadSeekFirst(CONNECT,Text,COMBO_PROFILES)
+         	IF HFound(CONNECT) THEN
+         		HDelete(CONNECT)
+         	END
+         	// Update the combo box
+         	ListDeleteAll(COMBO_PROFILES)
+         	InitComboProfiles()
+         	
+         	// And the controls
+         	HReadSeekFirst(CONNECT,Text,COMBO_PROFILES)
+         	IF HFound() THEN
+         		// Use the existing parameters
+         		FillControls()
+         	ELSE
+         		// New profile, clear the controls
+         		EmptyControls()
+         	END
+         END
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_CONNECTION
+    identifier : 0x274577e01614a9dc
+    internal_properties : CAAAAAgAAABAqTZrgJIU3Cv07fyepVjuurefwcWPPxkSc6SquMq1iMOARWrSZlu5QUeg8Y8ZS4Qix2UvZLWlNzhgb2JQea9J6G3wyjFPeBBrQBmO+wRCTfpz3+yeJlk2AT5cf2tSZd0DzDI1MZ+2xOexjATFjbsLlJ/GqGtHtdjwex9BFI81bx3c16/2DJyKJyrtkFtxNwmXQ8wKf33d6ROorT2YbrVFpvW0LC2CRyP6sAZ+2rTpA3hVQ44Lqq2yH6eW4Tup+3aF3sDxmps2aPtqqMcLF4tN4EPfLio9ypxA3CHn8z0JJmBgt9N6IjUDSKHsd50miUAJv3HbjsX5HzyoPwd1JuRL5Q/ZmfDsLm6YEgUDOaMFWQ16kxmnJmFgpaKPpBcsvQJK6zhSdow1z7gb8AmjnQ7pI/Phn6tc6YLs8Ghc1t75QEkibBYuHSOrrQomJ9uy/F2v5h5AWRFq2n/81686+Vl3tnSM58BPuYFlz99Un+oNB8mIQEZQz1INg7wes5+vRPZTStq5YLNWoNmR7fTaQS03D+GXiAUP8R9zyAPFd2ZuSzC9IRlcWEOzQSxpCr28Ns220GgcztcONjIbQKUT+txpYi80H939RhR6ljaO697shrpxz0JhcuJkDpVS7ND4B1Uos6uShiXBojDXTqjsH6uIMzyLp9IwqtIX3mWMB5UrG1t6E+RlXmuHEa1qyg6TYXaGDSmD0eeS9obCwWMVatTKTIu5GmDsTNKUJ3/25J6jNXQS5LdPyXFZBWjPom0p0wWtw9RbeCRj+DFkZe+thp2eZwOwtESv0KS4elsYfFOG2TXDkAh0C3y4Bk+wkgDlNNN8pvarkD7NDZwMztPfbxwaL96/rQ5P7pGNUBx1o1ScD8NO6u9o46y2Izmik9OtZtUxvTj0xQ0znzE6gBtlDGJ4ykPLAiCDTmwkG4ixE9GWeKJBrPuLtdoPlhG/LxPwcdcgIRnllI3x6urReq8F5L1Mrgvik0JIivVa77XR7kq4YmFUy6fZMBGujCzB4tSmMXrJNadAK6MyCGt0R+wurKFweOV+3r8k
+    properties :
+     x : 246
+     y : 533
+     width : 100
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1+
+         // Check the input
+         IF COMBO_PROFILES~="" THEN 
+         	ToastDisplay(<§$0007§>,toastShort,vaMiddle)
+         	RETURN
+         END
+         IF EDT_SERVER_ADDRESS~="" THEN 
+         	ToastDisplay(<§$0006§>,toastShort,vaMiddle)
+         	RETURN
+         END
+         
+         // It is an IP address so
+         IF Val(Replace(EDT_SERVER_ADDRESS,".","0"))<>0 THEN
+         	// Format the IP address of the FTP site
+         	IPAddrSetup()
+         END
+         
+         // Store the configuration
+         StoreConfiguration()
+         
+         // Compare the configuration to the previous configuration
+         SWITCH nConfigComparison()
+         	CASE 0	// No modification
+         			// => no action
+         	CASE 1   // Add
+         		HAdd(CONNECT)
+         	CASE 2	// Modification
+         		ScreenToFile()
+         		CONNECT.ConnectionSecurity= EnumerationFromValue(EConnectionSecurity,RADIO_SECURITY,EConnectionSecurity.NotSecured)
+         		HModify(CONNECT)
+         	
+         END // End switch
+         
+         // Save the current profile
+         SaveParameter("Profile", gstgvcFTPConfiguration.gsProfile)
+         
+         // if a FTP site is specified
+         IF gstgvcFTPConfiguration.gsFTP_Address <> "" THEN 
+         	// Open the connection
+         	FTPSiteConnection()
+         	// Close the window when the connection is established
+         	IF gstgvcFTPConnection.nConnectionID<>-1 THEN 
+         		// Move to transfer window
+         		WIN_MAIN.CheckConnectionEnded()
+         		WIN_MAIN.STC_Current_profile..Visible = True
+         		WIN_MAIN.STC_Current_profile = "Current profile: " + gFontBold(True) +COMBO_PROFILES..DisplayedValue + gFontBold(False)
+         		Close(WIN_CONNECTION)
+         	ELSE
+         		// Specify the reasons for non-connection
+         		Error(<§$0005§>, ErrorInfo(errSummary))
+         	END
+         ELSE
+         	// Inform the user
+         	ToastDisplay(<§$0006§>,toastShort,vaMiddle)
+         	RETURN
+         END
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_CANCEL
+    identifier : 0x274577e01615a9dc
+    internal_properties : CAAAAAgAAADFA8VyzVLlF6btsqNfH3AT261P8IfwcF8iXTccTUT9vDkptOT8GANa+heBIieZ1MPV9N8BR2OHLxh/ilAh+hrqEkvZM+KVzBJjuMQkDs1DwORodEzwF4CwbYQf6I3HrUVK/ceKsCg5KoTk1U4YyhBLECZ6O9a1s4Gefaaa4sqBQsFoNqE5swrBrHwdQKvTeUhvAL7Mp4QUDvP9bMGSRWkmo+WB/8oPfBcNlyplgRRqTotDXw5/8xKTEdCL+W3SRScxgg8UmLEunfqA1Aeiighn89OGCcr/UzSbioR1I6NCDHcw5mKo87Xqjorm1qDIF14DK5Q3x0zTDUMeDBUovHYbqA/95/tXNaEFiglLN/lOxcLI7dkPrZ4eVJOBm34zaxHIewI3h1v9M8cwHoQfDv7NEYZXAN5zeIlRFeK7ziKAgG9PNEmCYvN6RSxInUNnva1DxyDwTwneW3NviMgWZ8kCV1aQHaGtgwutH6yIw5+RrqJcDZGtuAXPCPOTnOD/0jSmUZMr1u2t/Wq1Ppq3u1VEUobrtGIyrmdUz86ElTglTqOaxR08Gyh+AtFu2DsZZ3G8KPZ6JQEuv0tnF8DFLSXxQqUbiEOoJGUUo+b+eF5UdEt4FUjPU1vg8W30oNwJrLhSWQRo8HuZRiW8cBJqNdm2jAN45npyrtG1aTd/N7HvibgvpgxMvxP5YO7pNsVExWTVBxb5h0d8HxZySf3ELYe0GGRCp9DAHP1M6Yiko1WnNirGCvFXqfKkpZ1Q+zBsEM2C1bIM0oGnmwP6FXi6jPrSKJzgqFVgnK6BjC7kebOxV4S2W06QqzVKRAW3E/XNm+wB6qVMgLz9b87BODseejZdfcfjp3FAZh0zaJ+1dB8CdzDPTsQV1rD/pUQt8YMo5u6jR19pH8k1qKBtpbw5pQ9W+CXx0X9P3w7D1WFEA4beV6A/E4pjyNJoxrR2Ogqw6C0obOdxo30YvDGUsPyc7X7BoxyKk+UUAZwHGFXwN4K0CAdyX6ezwy+SJMCRH9U1BMMQJ1/EjjwOEzYPk9rPHZPjDeKOAvQRtEU=
+    properties :
+     x : 352
+     y : 533
+     width : 100
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1+
+         // Close the connection window
+         gstgvcFTPConnection.nConnectionID = -2
+         Close(WIN_CONNECTION)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : RADIO_SECURITY
+    identifier : 0x274577e01616a9dc
+    internal_properties : CAAAAAgAAACRyVNE/q9EzWGbFShheEyS3KSZEoBXY1cMGbGkcVbH7Tyi1AEjUNSI0JA05Mm28DMOZAYo8or/zIMsZstWkUZUhxQg0vw2w6eCLeqJI3Kah0z/d6SkF3Bq5lo9WWdynn5F0UQUBNTMr3MEETbLAoH2W+v+ZK2PewjJfggxgmQnrIZj0UTL3zH4lSEK8uwcFFRj2hy8Hi+RIYCtfnRoeu2JjJMUZGEFuYLgS6O9MLHCGgmeZ3zguSr2jYAe5+2FpfT/6+xfLJrxiEIFB4/EjwMjWffUfZgI3Krx2Fplae5vCpf8bnWsEKhHLcd92eCEaaKWqe7AuWaMv01K48Ao/ZMUrAIMfBkdmuCKr6XIdFICvVG+QpkdFOPKo8NDxV9QSajwZ0rWT2+2I/GjCo9WavjtMLM0it+XVHiwUN0ynp5JcsfN9hKkbn5d5cHdxhrujzc5XTo+4y+HW+nE7zJoCMHKZezWqkEtIm8wPwP3/hE4Yu3iaZNHbPF+BKT4EoTUXDLBMqjbufTSIjb/8UAaRicGXVGFmzsHswqFws1VF5c9BosdCWqGkPs7SSVRMIm4Ap5KWAgph0Sjkjo91d96nvoQu6EuLryDsVBJN1yVQNb4OPZ1ybx+1g+m7CQeCeBDBzGS+nrFgB7LyUm2MBgGAUgCrje4zliJE9+xM/e8R3WTyZXFl0D89xxDAzFpJRwFgRg1b4MtWbP0huS5zxGarjXancEQ+yHQTesfylxcHfcTKgpUzgiX6T9EEc68Wyc3h/5tlOijQVfLp6klSVmVNVbM2nK+i5WAThKbMfmUgG7ZuO7KVPF2L/881pp2jOmY5nvVYQlkzn6Ed6ngZPKgn2Zf2k+Jyh72MEAP4Y36xz3wUgjbnUxyz/Y50dLE+GpRpqE/VYuOCWpaXUmje5vWSrv/lr4oAr8ii3Oeo88oLv7V6CGpTzghJuP3a/DRgJkZBwAPfLt2DH7O+XTyEH4ya323K4k69f9DGFLOUEGZ6J1Vzpwae46exxjlKcA/uZwFxVcpNHLKqKwrk9a7aSsX+PAeEWoPq0+z5jd9l3Goy9viILNgcNcboUX0l3EVso/Up8jIE3wAn4L/3uur8p4nDA5EoUsXDdcdsNAXRhjJIlF+cJN359ny+lyTmuLYfvbuXYIrsr9VbqemssgzUgDNRF6nEjiHt08V5nwCw3iHiohYGkoq0n9Tz8Vpe/X4aEl0rMnYvGdqWgl6qgRvu1BpuRFcfYiz3dcT8mMz2w==
+    properties :
+     x : 14
+     y : 222
+     width : 346
+     height : 77
+    options :
+     -
+       internal_properties : CAAAAAgAAAAhYugV8PREN7lXZdk5qFXIXUXkMc/cGLvBzVukm228PxuOFwhml1ghSgGBvDH3P7YasSUppjd+o6U2oVQ3mqknplnGvDY3tchQNwT++V/BAOVqy0kO0ASFbvB+FJhBY1qiTkXnJZrVP2KJ1bFI+gTqtnVZZgvbxroUGDNm77WLzCkv
+     -
+       internal_properties : CAAAAAgAAAAM7pg0oWsIQYTMaB0wL6JKmc+3QEAmAXnIswQQbixwvX+au2wWdz4lDgTknF7OWScU+sg1/EmiOw8/uMx1f8QkmFjFkhqUXsLPSthDPZWbdYb3caPvxsM5y2VaV5IBcW1tjZtx0c9TRJQ/9/7U96oNeRyh5CmC0o9qmjisRL+jN1HdY4CZavsdBPn879rxaw==
+     -
+       internal_properties : CAAAAAgAAABHl9G9GODRGvGJNdiLEneZSAR8RUc7Bn7BhJE/QWMVfuYbzHkRiHNeX7X5O03VjrpH2yFiD8oPgIBg3Rv8Oinz9+3CS+mHzoWCzQuQEmQOLlHOUGTsITyUbtwxOEsMoFr4FOpyhupsY8/+Nrf1ygWAMmWyIyCL2ZRvnz2nf3R0Bp6iuDvcL8ZmXYJ1dqE6oA==
+     -
+       internal_properties : CAAAAAgAAAAQJar5faIcqduCjYg/dAexWXYQzaMiexfICcj65stELCZjA8Mq3kSesWqKW8E/xtXFujlhV2ZBbxZbqX5icVWNEzUAkw6ZSpYzr4yqqyHcLIKqwRcxRxrS5wAkomThGooTahFHSBH7tLUdMmAtdNK9REYgAPn1YD4aAXyL7c31CCQ7EqwI9+Dmf1ahK3/eP/w=
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1+
+         CONNECT.TransferType = RADIO_TRANSFER
+        type : 17
+  -
+    name : CBOX_IGNORE_ERRORS
+    identifier : 0x274577e0161ba9dc
+    internal_properties : CAAAAAgAAADg3b6i98wmZ4xJJAE5tmSVg4jR1hdiNcux/QkjJvlGYUnKp+Kyx4HkzVJi4eDzP+kWT6tJ8Dekn6bGZBP0AsL+62ec0N4+3MXwCuC8Y/2+0rA7bcsAggq7VEy8DRrOsKElAv+1iqLGsEFMNfZ7fCHsggavPvEKrbj99SCkZoz03JjkwOiJMMpswBCgONMf+dbExfyrvgmOtUGGUBfScyq9wV6OfpnVbyQTafyY/szupASQb7BjTd0yuHew1+Isb5Kqt+cspI0mWKSfKaQ5+4QzkI2NHm4wUF8+1W0/VLhqM+rRebKJFgsOpgr4y6SdZbTj+XCeD8DDkwP3jfzk5QALstRXAWDlq6razorFu2V6DdiuzA/Wj8ednaBVetGG91KA0QCd2DU9zh9SIr+O61fQsf3lRBnF8qfOJVrWf5y4wiIrv9gPjcbnEAqJViVp/9JPJfWOHQXjFuB965YMuS5d+DUzVKeHYt+SR4d/Bu9ssWy5mx3U4wkJVU4uORCEFNn/wAiM8ujFx6YBSVWcZPlhsBSY9LtVy5ohEae/BibJkPyOtXvUCCAyip5vSWvsgxjmMGs4R6S+l4Zo5/k9DjBiFHnMk+ZiUqWHN4qjyKDh835W8VdIFMFN7fkl/yjQPi+3p7Hy6+QDAqBUz17hxaVwXpY8CkH656EjA3F6mi5NZEZjdXp8rIjDugMkLEGbsM04KN42QLqnNRJF7SX7yxMKfqyOXB77bERSeLGFo0wgW87Q2YNyZIICl7dN+tQ51TC+kQttZdm5GcOh/B8zWv2dlH5kyIgnOpEDU4BPt+9wla9Avgh1aKteP/LjHKQJcc9lm1K6kK7cxbv/v3h5Z24OLajsLzaNuAb4V7mlwd2Kvywi2sTnonrqVayVB4Oemm8WfBn3xUDxIvIEopL1Iro+F3eT4XOlug/fcZ+L/VIloJRLkfuUfmtmHVgCMFcMb2X5U21EhiLiQGeC3Dk1BjHwPY0qQyDGvoa3v+bMUlHbTiZTELA6MoH+bLLIKf1bwb1jeGcHiAIQV4A3lGfnk1pkJHumP+BWfRKOmDxLC5dA9+5gxJlAqJjdplFRjWRXQuXENZMR5LX0BAyfOTS4/cTR+FoQ7sJQPK5nE/DcFmU8qU7Y62Ov6rpc/xukV63HqK7imIrvxJPcsHw11sJ3sdvN2wv5m22CmOpDFZz3GNnNBOP+6P1JxL29q6u7GtiO12Q=
+    properties :
+     x : 14
+     y : 305
+     width : 346
+     height : 23
+    options :
+     -
+       internal_properties : CAAAAAgAAADQC6xzv7lREl6rYTS+ol7pnOZ98eph/efZjXM7J7u43xDpUmrirY6wIvWTLzM6mpFpp8W7OB6SDE5u6XAU3ck7yxRdFKuai1zByGKY7To9rCFO+5b09DGlw4NcSr/vYftPo7UM4/agEeUOiuiAQ1i3Y8IqsXoRJ29IVG75p7dO/NBbkpmdDCV4UggxQalb2YKTxgtIL9xC86EYpweopScSUldpq7OKyQ==
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes : []
+  -
+    name : BTN_NEW
+    identifier : 0x274577e0161da9dc
+    internal_properties : CAAAAAgAAAB/8dNo+bieVUVkCA8o6AfGSnrOV35Y09/7pLLSbFHTFO8g5dXgwS0emYEP8ETw38SXWL+scVU0Cd9vUVS7iwv6C6ZLurLKzOeMRqwsd49CK/TAba+Ffwgw7j5H7CiC1S+Mnbk99AddByuhuBwvKU3pcK5tTlKoiY/QLJ9dgO3LBZLvI1bZBXZgWISPz1D7n9ZMSMTKfQl7kBBnVlEDAcRGpSdfP4GGHaU1F6GO0UOygnFRNY24moqd1AG+/jFmjg+uubxK2Jav8qHGTcgX/dE0wYQfEIYgJ72w3eN5zqMGrXGSTIJyLH5YGIKgEygrHSpSUmwfRiI+dJ8G892OeVUpuBRkOOVuM+sgb/oVJhPEPf94mFv2/n2wDDKxk57lOTKu32OyBqx3RjaJ7dUiyuG1y1vJx7q32U4Bf8FaVF25PNax6DGuh9APSvtMwS2kHAhRqz4I67zYEPEUOY0hv7cUm0K2G8dZIJZ/XFtdOFvGFx2BT9L1NlLE+BaFxLzwxJ1BvMN+VpcIhnLUwyaoDFRl1aq1wcTWct0G3PWOlCmUQy1jhTzktATAe48XR6cyW35GQo/cHKWKkcLTYlcbIK/ui+5HBpEzS8ympdR+LS4LFFqqnnOqI/NomH10HIL3BnVJnF9Ino3Cdg+r5A/D7Hp8h4BenBaneoxAbuAT/q3CO0zbWgVYFOsT5f8EkM/Ke21+nHSPRmoOaktvphx/DvMK2bgJjnSVc6KVMAedu3hMrU11l4+rZMO63zFkedu2JQrbATs81gnX1VZIrpnVUvWw+v98VOFoC4dOOybNkMZI1G1/hXDRGBy53zPW93BOzYcrJV2MUtcaUzC/NPpuWAuLMPTZdCcPh2ZwUBM1EbDdAJB7X1rib8cjyi5nryE6L4aHehxznCXJhJGS6Zc2hZM+aQJHIb4qWmnl+28v3RZ76VYuGWs5b1v4VmA0jP8geQujPDF08YhXZnk2Y8AyV1Y5gJ/qSd9c7KFCHriEuueMnsjKoAYt0z1lU+u+AGQ=
+    properties :
+     x : 398
+     y : 63
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Clear the controls corresponding to the configuration
+         EmptyControls()
+         
+         ListAdd(COMBO_PROFILES, "Name of profile")
+         ListSelectPlus(COMBO_PROFILES, COMBO_PROFILES..Occurrence)
+         ReturnToCapture(EDT_SERVER_ADDRESS)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : HS_Advanced_parameter
+    identifier : 0x274577e0161ea9dc
+    internal_properties : CAAAAAgAAAACH/LUcro7VNnnMrJ5XQQ200qrU04eFlMR9dfoohn6Gud0zY/s1miJcjGOVyIlJciMdFhaN8kv5+154xGPMhMS2/eZ0Qzti0fFUJY+BK6BK1TmQmGA5Gln3JKeWJ4vhSvw1uRJi7MSK0BiqlZG4Ytamsrkox2l7u59d5aeIBqSV606awniMkdUsrRuga685u/1KJVnL/FojK25iGGh/3sDHZ0TjbdjVThBptjtVfvXdfmdZHv5agW3/x3mf+xgCzIg9ytTmKQkCrG3Cl3LMX0uSBAasFxByBkr1HsEEFjggeiiR/ISzkibBOiykfx650cW8qc06XQbdJinNIUrxQBJYiLa1Vd/DJAwF/GR0V2A/lJWaHZYubM5bY59uLcw2+fqxDOCIVBQ4e28NjegnPOamv+A7CJGilw9Iz0RlKgwEnp6hR8VRwOcNtPVp9NylgGSWg/4
+    properties :
+     x : 14
+     y : 334
+     width : 438
+     height : 193
+    controls :
+     -
+       name : ADVANCED_INTER
+       identifier : 0x274577e0161fa9dc
+       internal_properties : CAAAAAgAAAAupOFONO26nYQLWU/2wvyl1LviIkJ5CmrmBfAory0pI2Kd7uLwNmo3dRv2Q+cUK/0JoWekJ52FayDt418cx6WSoM6Hnu88DroPM5KSfXW+wL/kPhxIyVogIcyatKMTRQmWJ8lh0j7OvK3KAwEftovHBF1pqryFctNH11t8EY8qsRfzK5AFymu7HDaRwMS203abA2N8pgnRLbHF2o6vJINiOvIfAxftXw2khGu3/UWtB1ZwVyn1MtL+9gcWW8kWQiymjdbLcE6Ok5FgJTKWt7g0IaOQ+1Qq7dztzyitRgV5sbavFKCBdWiJz5C/z3AobhCQewpcV+Itr2xG+WBvhCrv2tSkXuATDVLEkyKz4Hv9OWo0sjXktciFR9ralbYJJpFucNLkg+uykR8KGqMmlxWm5ln/zpkx6HEuOE0FYliLfRu0Lgpt6qLJ7rpRAo8NPxO7pqNqwFhySXxzWkS+O3yI1B7Dk2xhnLvp/UAbFCzW2IxlAVnd6FOp59TXDU3RlZqczv7tgbhdgMJy19PVH2NnpkUrQxKFR7ZjyOpHMzEmeoC9Fn+XVRe8voScP3esDq0cLRBPu+rjtVvDcxyl5bGwUMlrNxcxYDa7Eq/iJ+kkjh3ozQVfOJN/ZaeKqVZyAILSE3wiesZgBC76T1rHJSEzPcyinz8ZYE2SEqMU3+TOmGLJyw2sofZ20uiCHmNwlmrvw7iezlo3ja4WbZY7XNlqsbfnLXN6fUG/LaqwU3082tePM+UD8G6pXzveKOZp5bcdR4/47JaT0SNOq8MRaFo3D7Vtd5zn3EonUys6FhuA0OqHGazJZKAKcRZ2twnIo1qML+3IQLF/7yQ1NEw4eq2iEzieTXIvOTfRznBBtfiqdrcdDbCQFdp4yrA5IWt/AOekWZbwdpJBQYh+7Uk0i5vdUuidlwnhfQsNJ+7PKfyyAde0JtnHcXgLm0xKaQZVPLJKsMGqUANhAv3XcpJSNyyKKXsBxxducnMsKxlpbW+jMsBjnJR0/sQfzN33QAu59zMhm2U/vu1BrUZCETe3aaL61c4+02cnPPMZrD+7aHz1jfa+uIvm4qqkWySA8Qug7gLEezJmYyQDR334iVT0JTRHsSVOV659sFhnE8CSZRTpTSwL9pYMLy5HxFh/mEhiIM7Kbohzz2j+4lZ42tx/L3E0W1uDW08BueCH9xmr2D8+V8elJcQqYeL1KvhH1QWtaFxBZogH8ao=
+       properties :
+        x : -2
+        y : 6
+        width : 323
+        height : 27
+       options :
+        -
+          internal_properties : CAAAAAgAAACER9v/OR8mt+cDlQuPOy2Cu8Ay+ze0yJj5Rr+kh86AUbumufQ6jvD8B24Pf9z1lTNl7qrKCA2TDyNNqzn9EAL51Bo0QkZO8T2d07EWsHBFf80C+oOyvHFN3mPFAsEtEkXeVSZGL1/8BnbEArdqtVIcfxW7WJ59iZLvV+OpyKBY/UDmdXI=
+       type : 5
+       controls : []
+       code_elements :
+        type_code : 5
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAADxw5Qfs0SdllFqBwisp8ZfsevuLAZ3BwtJsIumiFVJSVtWmNilwnXhEvlPlkzyi5wBfNgUhlr5PU0UtygFy0crgkpbrg5T270XaZEfo+XpOYiC+9KXVg2sp/9Ef4TkVIdWwpYMy3FUtLoczZY=
+           code : |1+
+            // Retrieve the value of the advanced configuration
+            ADVANCED_INTER = gstgvcFTPConfiguration.gbAdvanced
+            
+            // Modify the status of the hideshow control according to the configuration
+            IF ADVANCED_INTER THEN
+            HS_Advanced_parameter = True
+            ELSE
+            HS_Advanced_parameter = False
+            END
+           type : 14
+         -
+           code : |1-
+            
+           type : 15
+         -
+           code : |1-
+            
+           type : 16
+         -
+           internal_properties : CAAAAAgAAACK9baQZZ5NSJdWe+b+M8SrjzgtgaAxzL4lG8d7iSsOw+t4UF1h+ddXwuLzCYFeN5izCIMLX+ebGvlOTGfB0gndbtlMWaQI2XaXDwwyh0KnDyTj9v8PnwNRMZsZiPahRJvghzXZIcugqTrTew==
+           code : |1+
+            // Modify the status of the hideshow control according to the configuration
+            IF ADVANCED_INTER THEN
+            	HS_Advanced_parameter = True
+            ELSE
+            	HS_Advanced_parameter = False
+            END
+            
+           type : 17
+     -
+       name : EDT_PORT_NUM
+       identifier : 0x274577e01621a9dc
+       internal_properties : CAAAAAgAAACG7Na1XRQheTkvmWbb2Vc/+D17xHim9OAheozjKG0of6/Pds57Yp0V4OCnD1KtqdYgk8rn1XfRKk2Hjv1qU12oAHoWJF340cOSdfRUNWI6tH8EPQ4sgGLhRM7QfZz0cINsrc62uYgGT3r6pnXi0aGWUtJtVjATN/UYKMYfpVwabI8rCzNQ72EoGz8REvxNesJe1LDZBUQJzIeg706lwH+7NUa5CCU7xGwe72riPA6eAITSeCYLulen575OdVwQhBAsBWNcyoLTSMiqTqq3GWGAohxScHL+iyVnYyUIosr/pVCwT9iGy1XYT+G1Es4BgzN7N0ILWiFeceG6OuK9NOCTFgfJsAWPSu04DJuGZeww40psItWatrfFMnnZ+LH+rb6BbigYK4rsml1KyfTGqzNyxINknpOS/VfGdlGt/J8zDG/A6vaHybi4Am+pf4vXJ7DQlEAEV8l88FImBEg/Erf81QHnna2gpjNUD1bml9fnv3WJaSMAdDvotjWqM86rrAkpd03aEc/vaz1/b59kS4J3gNyPEU7G44+C+QShSsvj1YVW7X7s5tSk+f1r7KepkbP19XJnDZiJhUtD4vPpO3ZMAjJT1r2FqMGz4prnDF0VtKmNfyt3As7Uxxi86YQ0tUj7Sw8paNEojbrP7/2+sVvdqCaJOHqgWk5ctGoYS7g7Mhu2VUUBQuEyYC9fJ75RGG594JR5TPDEXIO1DJh8MscYpLzwWiUlMYvQYRx/Ny5ArLzkhP6eL+xTD71al6M6Fivag9dGTa+F5PlwmS60N50RmKbb9uaV3+8Wy4nDBMXxxYrXUnMPcpHuLy2hir5vxGEtTGP5abNub9i5yHouR5AXdm8rYt3ppuOMYUVh95RxtiC8VaC3aNNvwGe0r4zAXawAUvcLLTbdYe14qKAKWGHXKwjI1F5+IKlk2oZ6jtZhpK9V7vvzlTl6dxCu4IPvjLfJSw5edY9ANf0PGfhKOJUsDyjxY4IPjvYLkWnEnRg2UjyS9TrJzLFdYxviRaKzYVMo7DnXV1u0IINgqeBb5NDChep+3pHho4LWZdBPyfF3emcKPqVaGxLVSpSj9kpHIXgzbVpcPOjuGCk/3+1LJtqt3h10q9LVvbMLuqvXKqintzALgMhHJyfNxgEV4ofKYHZat76MXqUB82bcg2TvO/8jUPg2IULuqAltTv842X3K4jU+k+yggtjeZzd3Zu7IlCmQRGuwqBQ1YwgowTo3sD0nnACsZcZWfkIHmfdmLkKpyo63oU9gXcwgzFScq3kZcKJGPdQEUOJLmNTPpk6oXMNIc7OPVQhVVRacPEqqehDJo4Aew9HDr4i7jY1bBAsXdadHgrJzrohR17k7I26efyzIGZhKKHsVHIweUGPzEIDFpFuQTv/yv3CZVUhGCFaC8wRdiKtAb2aorpGiuuJerrwVzz+GCGYXRr0K2DVvpQO5QcVrhepSnPlRPdxCZyFjs0gHORTrRrD74MKfHac/WoiJ
+       properties :
+        y : 52
+        width : 244
+        height : 40
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            
+           type : 15
+         -
+           code : |1-
+            
+           type : 16
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           code : |1-
+            
+           type : 17
+     -
+       name : EDT_TIMEOUT
+       identifier : 0x274577e01622a9dc
+       internal_properties : CAAAAAgAAAAdjGtSpGDVe5ZCW4uY19twwLSB6v0NkI0vdBoajI0NlVXCbtKrRijcHO2br98RwCurEmxNE8l/4OOh1fUhNMgMSgSWKgTgdP426vo2/3S2H+E8P0DPggvswGpOrNWhbF1fok21Ne27vu0oLE2AZ5c5unu/aN0dszoe9dQpH+po4Qm8zNyTaKXXpO/5yIY90I4SsLmq6Uzpz6RxDlEngTqBxpIOHA861ZOGyGRWp+uErigUgCZtyp3A4IoLmGvCyUTVhdFYRxu0hYxCZqsnyN8rEUkIHIXtqCRbb9XZvKweFXGYQnHyULIC/w4Fu25kZxiST78XeAxxIfUw50nE2K+IsS9JZhJLT55iY59tfevCgR1U6d79qT4AihTc+9uO3swIlFUXQRN2fK5rkwuqh93yYIarSz7zH/ZNJtmE84ua/nYpDZPstgDVaIvEN3bm2IrXFNNWF264NFkHVGgafth3U1pR9EbLXcTcfDeRpmrMaOTkGATHFtMGd12J9j6lm6JX0O/XSwmv7iklkQiNVp5lWzYIrWHxnu1eIlTcntnHBnBcR/m8Lg/LoDVnkwbj+T16E8hsmuvFwxkDBDQZm6kPGiEyzrt24E5np9L/HPdkEX3q6nHJbzWRst+nWcfcLlVcJvi0wSvG5lEhifMYyXyDXbpX00whe89OER5vfCIjo45btVSfjDNTtV9d271HmQPIKqUoH/DkX/e51mbgRUE9LQQkG0BKf8R4C6j2qal4HZNqiGLn0rH37pDcHqW1HyrWRjcvQLsRH/yzLTyUcKmYW7EY6SNHL2D3rG0ZyujhTF0CN55wPsVTQD713N6GKqq88+hMglHK7h1+WgI+mirGgVLGpyzhOqSrmOstKw/xaT2R8rPMeOM++SCe33YxTR37tRiC1pBRMFBb6PLUV0Gq/vt/ZcnCNowvLeZQsrkLbbIQ6y7gSxGPYgtqZpky8ogu4FlDfPcKtFoUz6CA/23faEFeVncTcqmOVE/k97WUrecFqA8gSnXmsJCKX7RwSwRfS9bq0C9C6WxBCdavkZD5cJ3jIc7/YQGTelJb1cxLOYj7Uerdn7bEeYNPSOqquR3MVn3hN+QE8/JwI8cfJdImrx7PaClbD9ZAr2HvkJnzKBms+8Vql/Hw19KjssXXpPUF+jP3S7knQKfFS5LHesu6389X+McIpF5Ob39+9eRW0Vg5RlHnrgA7wNgbAGh9tkJJrZQfhQRDLvVNUxLfWfUcqXVHKq2ONruI2pfA1tkDfav0qk4D0Q7FmVMS+5bTk6sEc9i1jH8rh7864rDknhjDXpDwnosSIW1ufsk9A2BXmZuT0eQTWF3S6EXkVMhBsExSBYix2l+nPODUBBVc3hyyy3pi2AnQ6NpoQKcbqjk7FQnNCVzIK5QX3hVjH6mUXnV+Gd/eUSGkGefIKYRXypuNEaca4jd2uw8rT850DHhHIP1F+48eY8fAcDfiPYfcJx/gI0Htxtio+AXl7Vnbw5lTxXq8WN39guZAeDNgh+Q7lYXY2kpXnMMUv8S6nW+k+DIzLBYT0uk=
+       properties :
+        x : 248
+        y : 52
+        width : 184
+        height : 40
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            
+           type : 15
+         -
+           code : |1-
+            
+           type : 16
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           code : |1-
+            
+           type : 17
+     -
+       name : CBOX_ENABLED
+       identifier : 0x274577e01623a9dc
+       internal_properties : CAAAAAgAAADHUe3XB+qhs+JyJc5ghJRABCsmaCBcIVIKpUtGiJhS4QZjsgM8VB642Dte/0epwPMu/yvaNjJzR7hpq7Bvxu2tO3IUtC7aOZ99Eq/GD0jykh+ll5YErLUgXd6z42PFangeyGqnd52MTsGpOfinbuapWTUXxAuE/m/Dk3MSFrF+k6k1zDgt9r8thlresk3KPEpiqapBSleCY2CT51coUqUV8/mTIwTK+SuMGrcJoT6FoKl1V9eEyzWQHHgDN8Vp33Bl5AzcdqVJZglruuXNnxE7z89KnqYyDEgtkss4yhRlkxIaPeMNXCFQDkhsJOp1Kw8tJ0ajIzvovo30nV/bVXfB5jpQJWpiw5zyn/66bcoeOayaaWZXwf9PmFZNeD35APeNEd+zq2j5pyoYR60c27E82ev5h1dwktzJ2T9Y1iO9+31xj7aI8PFkBbHuBiR05ZIgA82j90lKqNXA3VzCHRIrp3q45M6lYdXmpKlhBmrYE4kT/9gPetry+oOjushMA7hFOo5qaziHnqSSNsIyRfhRF4VCdQIDySkmsC1TNE2AILkEhSdwJjJsI1ZRD3klZUSlb+bhhFZMMIpsO9ojBEgytlOiGO5SZb+LVXss5WpNHwlMzkoypvT/PjV/lFvw1t7OO9kN8M1MdCeWru8EFnTyODQv9zPCeI3TOIVwiTZfiXus2UABJKt6x6UEhM2zboFrPdSvdq7ZQQMfsxhBNyUcGu3Ac1+cjMIkZzPY+4i2FURgNE2Y3BXTojGQzMErgRUpwwTb14Gk6NYh7QOMAHkcifyf+IylAcC6D9GdUCWwxExvmHcYB9m4Efzs9NkWdugwov73sUNbjHyN8pq4qClCq2tufq9wlL6rxZAIUbgvLBysDR6lk3jKD+0Ijb8OVi6RwF5Q4Cxm3JieF9vAW9TLVucKTeT+syvXmGlv/+7xvFDHqvo8021UKm1FzOoqE0T6iRdtgvi7QTdAnYSxJQjW2IR1yLH8WWr2oJ60E1PCz56UWCV/TamxTFdjIKx96yP7okcUksjLioB452PjkiWFW4M8Sjb2+HMiUm1GMC7Uyoz39Ey5S05NC6tG3J7BZjyAh8eOKKcafaMHD2SZdeqiz7fgDdnUo8cnocBsn4krGOI1vpEaHPuf1lQtglN0t3bBmyypFkSi66YKqAxzQkKKYcXKVsW8cxAX0OBPiHK62L88ZM4qgU+4zpWgl7jUSqbvAi6a04RozLJsvpsh0Q5lyXrx77B14qGy59JmIG143M465ALb99i2ToA5TbmO43aq6zfrquWm94Oow9wHwirRQg==
+       properties :
+        x : -2
+        y : 104
+        width : 323
+        height : 23
+       options :
+        -
+          internal_properties : CAAAAAgAAACGLifLSxCiRMmM4A12VTIle7TpmE8bCwbko0lHUXAXNfbh9FzO+FySB9JEIGsFW903WP9GE5aZ2lBlXCH89lD8SRBTrIXwazCtxh59vYpJ2TCJYh5I3WJRnnFv2yH3XK4AQVcR+TK7G0bWbzPqw5LM3feqod1aCwIa+PVwH24yPi5FK9UpUg==
+       type : 5
+       controls : []
+       code_elements :
+        type_code : 5
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            
+           type : 15
+         -
+           code : |1-
+            
+           type : 16
+         -
+           code : |1-
+            
+           type : 17
+     -
+       name : RADIO_TRANSFER
+       identifier : 0x274577e01625a9dc
+       internal_properties : CAAAAAgAAACle9x0dfBIIAj4nlecbyJpNbWK63Ai0AqqIC126zVlkoPInHR54XzrgpS9MVXv6vRixEsfywHTy2Liz5whIxvloHIVzmFEX1SlRpZ74uZzu43k7lNvoA+P2LzW+KQizpi75Fvmb+47FhfD8Vn9XeMz5N4Pg9jKKDnTlKRGjYXt8p6kAL7WC8IzDcqRTg8UmcUi2r/TNrKx/M54O5wUHSQCKc3D7PruAiPh3OOGNdob3y59z858towRKxwNvgdgHjSKh/Gk58q72bK2y6IGLotcrg3jBKSIcHs6L4hMo4X98a0LW3ZcPsm7ZxiU47tfcif8E0IWHc3rUim7WNDR/epYu7cXM1GUTBMi9ClRzIOCXQGS0XU06ffm16/eziG8ay7d9oygeMVFmm8NDgnN3mXBk55P7CuZB4qNt23L34bdFCaP2YU7fxBrCy9tvW0LG5/+OUxyLGDYCBw6mIX/G5+ZAT3Nqq798T1Ue2hFUCuCphj960gEzRS+lVm5z7p1lFixD8NNa/snbKdc4JnMvFL4k5bX5vZwFVWtnJjGSo1UtQN+JkfSRCbGrr4P6P1i4FZmHpAZ2bKT2Yg+3lld9tx46KbT3dL58amncF+QgIU0VFIogj4noBwHcVTLGEcCBhtg8UMUXYfxO5JzPAFGWQIrELYbxvnsBp22jjMz/fzCUi3rpFKihb7Nox9qMhUvz8IM81u3Ncq+PLOrs2wbXU6XY3k3PHmuk0ODzzm4nKERzp537FNodTrkP3Yd+GT2j6FJVfY0k43KBkQywnjnqrRm6lq4uAK6Dm0dZWmEDuH3rkHaf031Nhecp8/ROI98RvuZqnfejz/XDFHl2K+TiZ1qEewEOxscGnSCCl14eCMqI8OxWamDFKY2E6gNop56ZKLIBQfo16ukqcjMn3eeA4gzwuZ8WU2NGmwsbeyFWx98NXL3UJYIoPIm8lvFbxhjvSfpk8vdYjFUg6nEAtzAX+Pcl2oD9/AQHIAI0E6qvwewZhPusg9GMfS8T42ovrNKfmnLKXvKSHRhHPObW+OdqLL1may43F1T/iiL/mJIbpefDCaOEQcRb5YAZbfS2P8mk1FLon9y8jDwHP/NF1ddyC2CzZXSyysBG/vhodvBByy6kjZujubEtxmQdhytq8UDCCSQLL0NcwYZfEDou9rCkgv93CbpOMOlIDMbcAwUgAdV0GlniuieBJ4Wuuhw0d5ExgAWXVOSBeuGUoh1eCwuskpLV8XzhwlKZJuIfXzGMg==
+       properties :
+        x : -2
+        y : 137
+        width : 312
+        height : 49
+       options :
+        -
+          internal_properties : CAAAAAgAAABGFZYPxcLbSy7JIfjTNDI0p8EF8eDoNI4sW0iO7NFZhIuG+iLBQpcAfA4jUU1geT6V3lzXPh6G3Qi7umj+JQO4qJqWWPtetv1Pb7jOHZoC8WXou3ww/9EetI5j1t3ljXZjV11u/54iMAZp3tsCZjPipBghGjYqxpph4weOGweM+WlLww==
+        -
+          internal_properties : CAAAAAgAAAC/pIGSxp0FR8VlO+zciUsnDlxQWeANI6Cnl6/SoGauS45MtZgLNXoCueuj340MKQrBPwWyp2Rhs/1XapB6p3iVSp2+YZH03OLO0z0506Za3YW5y5uytW8fAyLqRZeDu6DhBsWpaJ6WEfFdTAlbdRtO+M25RIpAhyXWFNV18t4D8pZNUhQQ
+       type : 6
+       controls : []
+       code_elements :
+        type_code : 6
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1+
+            CONNECT.TransferType = RADIO_TRANSFER
+           type : 17
+    type : 34
+    code_elements :
+     type_code : 86
+     p_codes :
+      -
+        code : |1+
+         HS_Advanced_parameter= 0
+         
+        type : 14
+  -
+    name : STC_Connection
+    identifier : 0x274577e01628a9dc
+    internal_properties : CAAAAAgAAABkniCpR8lDvBJ5gPD1wxkxzP/tnPSpN2jK6+1JSGLW3SrKa3Hpb6FYCEiGMTnPrV9XJhiqz4v0eCmVhRuPQ3j7L+IFC6zyRlQ7I0P+lB8ALwss8j9Gs1MzTqVdXzuiSBCTbKLS8ChFeYsrqmyB+4P2ryVIv+s/X1VqITStcMqNubbUoLk+MtGqFC/zaceOItAPWcV57hSQbpJ1ggeGYuaEdgCbcEkegXCG2ZgcFtLrpsbhIrEKd8q2VvGnhNPvl9dBEQ9AYQJpaRhWehqAd8bQsKo8fEbuT5rgtvvmPQpRPp9hiUu23onCWjz25tmoXmtk1re48a7gB4zoADvnxCiP7lslGEkQ3zdfBYma/K13sOmwsw5Nq7yPHLefNdEK4FMkrdFZ91/v3iudvjaArblkoNwINJddFODHzTiGW6kN7GrI78E49OJPztzPvwtTA4hwbyWrh0SVm5l+uiu+xwQgasmbWlD/k9cYtioD/ZHq/NMTq1Kwh5w9ZoCujnxBKdzIyXxHkjZ9
+    properties :
+     x : 12
+     y : 12
+     width : 126
+     height : 26
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x23e8acc90528e35f
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAA+QTacZhywxQc1LT5JxleSxVRRJoMGHkPKI/YkjnkpaGh9leBoih4ox4cs7Nrfx/9XnJRwQvhciB50rIEfnt3LDU2JZy/6KyOMTFQsJrrg62KLLmTwIMes7Gqzyu2aFSY=
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAAVICWzw3Vr0Xj5SB0+uwZxU/hwwAAA1ypVf01WuX++h9Ou9vFt6Jk+89XvZIt/LfVqiD0oF9NbZEmSFDBrJVXge0OZrAGLP3FxR+Uxgg11IHW4FHzAjGN7C61C953B770xKAGK9HYWGw==
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADbctUllDf4EKu2HhYRyTpK3zQ9J+WcjiR/Y0N5msJcPqQTQF7X+I9L+sHA3AkGcPUYeaCj5SeZfaMO8TRyw9niw1qjSzBYPEBllyKiCwtJZJkXEcdL4gARb0vHJKmLZUPDOPJk2LT0If4VE/354m8zhfso7BTOl41dIxYzoBZs
+     code : |1+
+      // Load the configuration
+      LoadConfiguration()
+      
+      // Create a default connection in the database
+      IF HNbRec(CONNECT)=0 THEN
+      	HReset(CONNECT)
+      	CONNECT.FTP_Addr = "ftp.pcsoft.fr"
+      	CONNECT.Text = <§@00000000000000000000§>
+      	CONNECT.Login = "Anonymous"
+      	CONNECT.Anonymous = True
+      	HAdd(CONNECT)
+      END
+      
+   -
+     internal_properties : CAAAAAgAAACqVV7ug14NiBcWu2b+84SrzzgtQaCxzD7lm8c7yasOg+u4EN0huZeXQiIziQEe95jziINL30f7+tkubEdhMmn9zrmsOQTouVZ37yySpyKHL4TD1t9vf+OxEXs5aJYBJDtA55U5ASva8Zpzmw==
+     code : |1-
+      // Fill the combo box with the existing profiles
+      InitComboProfiles()
+      
+      IF COMBO_PROFILES<>"" THEN
+      	HReadSeekFirst(CONNECT,Text,COMBO_PROFILES)
+      	FileToScreen(WIN_CONNECTION,CONNECT)
+      	
+      	MySecurity is EConnectionSecurity = CONNECT.ConnectionSecurity
+      	RADIO_SECURITY = MySecurity..Value
+      	
+      END
+      
+      IF CBOX_ANONYMOUS THEN
+      	NAME_PWD..State = Grayed
+      ELSE
+      	NAME_PWD..State = Active
+      END
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1-
+      //if gstFTPConnection.nConnectionID=-1 then
+      //	EndProgram()
+      //END
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  procedures :
+   -
+     name : EmptyControls
+     procedure_id : 1676878240305293788
+     type_code : 14
+     code : |1-
+      // Syntax:
+      //EmptyControls ()
+      // Clear the controls concerning the configuration
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE EmptyControls()
+      
+      EDT_SERVER_ADDRESS = ""
+      EDT_USER_NAME = ""
+      EDT_PWD = ""
+      CBOX_ANONYMOUS = 0
+      ADVANCED_INTER = 0
+      EDT_PORT_NUM = ""
+      CBOX_ENABLED = True
+      EDT_TIMEOUT = 20
+      CBOX_IGNORE_ERRORS[1]=False
+      
+      IF CBOX_ANONYMOUS THEN
+      	NAME_PWD..State = Grayed
+      ELSE
+      	NAME_PWD..State = Active
+      END
+     type : 458752
+   -
+     name : FillControls
+     procedure_id : 1676878240305359324
+     type_code : 14
+     code : |1-
+      // Syntax:
+      //FillControls ()
+      //Fill the controls of the configuration window with the current profile
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE FillControls()
+      
+      EDT_SERVER_ADDRESS = CONNECT.FTP_Addr
+      EDT_USER_NAME = CONNECT.Login
+      EDT_PWD = CONNECT.Password
+      CBOX_ANONYMOUS = CONNECT.Anonymous
+      ADVANCED_INTER = CONNECT.Advanced
+      EDT_PORT_NUM = CONNECT.PortNum
+      CBOX_ENABLED = gstgvcFTPConfiguration.gnConnectionType
+      EDT_TIMEOUT = gstgvcFTPConfiguration.gntimeout
+      CBOX_IGNORE_ERRORS[1] = CONNECT.IgnoreErrors
+      
+      IF CBOX_ANONYMOUS THEN
+      	NAME_PWD..State = Grayed
+      ELSE
+      	NAME_PWD..State = Active
+      END
+     type : 458752
+   -
+     name : nConfigComparison
+     internal_properties : CAAAAAgAAABCA12V41TcDd6uL/j3TdNu6JXaZTqXYehFf9pkyPUgz+b/VYl/+yno8RKb2UBkBgEUL6EgejybjtmBfgDVlDOm43HZ7s60WVgBSuAbaYSJHs1CAdgrpjmqmHL38Ml8abD9ElDTyO3IHfoOZn2Z
+     procedure_id : 1676878240305424860
+     type_code : 14
+     code : |1+
+      // Syntax:
+      //[ <Result> = ] nConfigComparison ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	integer : 0 if no addition or modification is required
+      //           1 if adding a profile
+      //		     2 if it's a modfication
+      
+      PROCEDURE nConfigComparison()
+      
+      // Find the profile
+      HReadSeekFirst(CONNECT,Text,gstgvcFTPConfiguration.gsProfile)
+      IF HFound(CONNECT)=False THEN
+      	// Add a new profile
+      	SetUpRecord()
+      	RESULT 1
+      ELSE
+      	// Compare to the previous record
+      	IF bCompareRecord() = False THEN
+      		// The profile was modified
+      		SetUpRecord()	
+      		RESULT 2
+      	ELSE
+      		// No modification
+      		RESULT 0
+      	END                                    
+      END
+      
+     type : 458752
+   -
+     name : SetUpRecord
+     procedure_id : 1676878240305490396
+     type_code : 14
+     code : |1+
+      // Syntax:
+      // SetUpRecord ()
+      //Store the record in memory
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE SetUpRecord()
+      
+      // Implement the current profile
+      CONNECT.Text = gstgvcFTPConfiguration.gsProfile
+      CONNECT.FTP_Addr = gstgvcFTPConfiguration.gsFTP_Address 
+      CONNECT.Login = gstgvcFTPConfiguration.gsUser_Name 
+      CONNECT.Password = gstgvcFTPConfiguration.gsPWD_user 
+      CONNECT.Anonymous = gstgvcFTPConfiguration.gbAnonymous 
+      CONNECT.Advanced = gstgvcFTPConfiguration.gbAdvanced 
+      CONNECT.PortNum= gstgvcFTPConfiguration.gnPort_number 
+      CONNECT.ConnectionType = gstgvcFTPConfiguration.gnConnectionType 
+      CONNECT.ConnectionTimeout = gstgvcFTPConfiguration.gntimeout
+      CONNECT.TransferType = gstgvcFTPConfiguration.gnTransferType
+      CONNECT.ConnectionSecurity = gstgvcFTPConfiguration.gnConnectionSecurity
+      CONNECT.IgnoreErrors = gstgvcFTPConfiguration.gbIgnoreError
+     type : 458752
+   -
+     name : IPAddrSetup
+     procedure_id : 1676878240305555932
+     type_code : 14
+     code : |1+
+      // Syntax:
+      // IPAddrSetup ()
+      // Format the IP address for compatibility with IIS 5.0
+      // To be compatible with IIS 5.0, the IP addresses must respect a notation
+      // Ex: 10.132.5.4 => Valid
+      // but 10.132.005.004 => Not valid (and non-corresponding error message)
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE IPAddrSetup()                           
+      
+      
+      sIPAddress is string 
+      sAddressPortion is string
+      nAddressValue is int
+      i is int 
+      
+      sIPAddress = EDT_SERVER_ADDRESS
+      EDT_SERVER_ADDRESS = ""
+      
+      FOR i=1 TO 4
+      	// Extract the sections from the IP address one by one
+      	sAddressPortion = ExtractString(sIPAddress,i,".")
+      	// Convert to integer to get rid of unwanted 0s
+      	nAddressValue = Val(sAddressPortion)					
+      	// Rebuild the IP address
+      	IF EDT_SERVER_ADDRESS <> "" THEN
+      		EDT_SERVER_ADDRESS = EDT_SERVER_ADDRESS + "." + nAddressValue 
+      	ELSE
+      		EDT_SERVER_ADDRESS = nAddressValue 
+      	END	
+      END
+      
+     type : 458752
+   -
+     name : StoreConfiguration
+     procedure_id : 1676878240305621468
+     type_code : 14
+     code : |1-
+      // Syntax:
+      //StoreConfiguration ()
+      // Store the requested configuration
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE StoreConfiguration()
+               
+      // Read the controls
+      gstgvcFTPConfiguration.gsFTP_Address 		= EDT_SERVER_ADDRESS
+      gstgvcFTPConfiguration.gsUser_Name 	= EDT_USER_NAME
+      gstgvcFTPConfiguration.gsPWD_user 	= EDT_PWD
+      gstgvcFTPConfiguration.gbAnonymous 			= CBOX_ANONYMOUS
+      gstgvcFTPConfiguration.gbAdvanced 			= ADVANCED_INTER
+      gstgvcFTPConfiguration.gnPort_number 		= EDT_PORT_NUM
+      gstgvcFTPConfiguration.gnConnectionType 		= CBOX_ENABLED
+      gstgvcFTPConfiguration.gsProfile 			= COMBO_PROFILES
+      gstgvcFTPConfiguration.gntimeout 			= EDT_TIMEOUT
+      gstgvcFTPConfiguration.gnTransferType 		= RADIO_TRANSFER
+      SWITCH RADIO_SECURITY
+      	// not secure
+      	CASE 1
+      		gstgvcFTPConfiguration.gnConnectionSecurity	= NotSecured
+      	// secure: SFTP protocol
+      	CASE 2
+      		gstgvcFTPConfiguration.gnConnectionSecurity	=SFTP
+      	// secure: FTPS protocol
+      	CASE 3
+      		gstgvcFTPConfiguration.gnConnectionSecurity	=FTPS
+      	// secure: FTPES protocol
+      	CASE 4
+      	gstgvcFTPConfiguration.gnConnectionSecurity	=FTPES		
+      END
+      
+      gstgvcFTPConfiguration.gbIgnoreError 		= CBOX_IGNORE_ERRORS[1]
+     type : 458752
+   -
+     name : InitComboProfiles
+     internal_properties : CAAAAAgAAABIsYGEk4BDuEjjun2g/lbFpmaez9GDZHqUi4bd5sxRt3rC2kpT6iGQ1EVj1k5/8x9cTA2WA/yKaS/fGaZbGvHKqJm6uDOy8TY8zFLJpOC3RjK7uNZZ9hJcCf2EyVv9rHPPX+ynbTqXBu/lFyactKQHGIHiUfWu1bmj5bwD4J4albR9SDOC7iWXOcNp1dsU3NMvfbryE50MBs4piJTyBXLH5Mt4+9OMMDwehrXimTGzQcA=
+     procedure_id : 1676878240305687004
+     type_code : 14
+     code : |1+
+      // Syntax:
+      // InitComboProfiles ()
+      //  Initializes the combo box containing the different connection profiles
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE InitComboProfiles()
+              
+      // Fill the combo box
+      FileToMemoryList(COMBO_PROFILES,CONNECT,Text)
+      
+      // Search for the position of the current profile in the combo box and select it
+      nPosition is int
+      nPosition= ListSeek(COMBO_PROFILES, gstgvcFTPConfiguration.gsProfile, True)
+      IF nPosition > 0 THEN 
+      	ListSelectPlus(COMBO_PROFILES, nPosition)
+      ELSE
+      	ListSelectPlus(COMBO_PROFILES, 1)
+      END
+      
+     type : 458752
+   -
+     name : FTPSiteConnection
+     procedure_id : 1676878240305752540
+     type_code : 14
+     code : |1-
+      // Syntax:
+      // FTPSiteConnection ()
+      // Actually connect to the FTP site according to the requested configuration
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE FTPSiteConnection()
+      
+      HourGlass(True)
+      
+      // Local variables
+      sProtocol is string
+      
+      // Find the protocol according to the security of the connection
+      SWITCH gstgvcFTPConfiguration.gnConnectionSecurity
+      	CASE EConnectionSecurity.NotSecured
+      		// not secure	
+      		sProtocol = ""
+      		
+      	CASE EConnectionSecurity.SFTP
+      		// secure: SFTP protocol
+      		sProtocol = "sftp://"
+      	CASE EConnectionSecurity.FTPS
+      		// secure: FTPS protocol
+      		sProtocol = "ftps://"
+      	CASE EConnectionSecurity.FTPES			
+      		// secure: FTPES protocol	
+      		sProtocol = "ftpes://"
+      		
+      END
+      
+      IF gstgvcFTPConfiguration.gbIgnoreError = True THEN
+      	FTP.IgnoreError = ftpIgnoreInvalidCertificateName + ftpIgnoreInvalidCertificate + ftpIgnoreExpiredCertificate
+      ELSE
+      	FTP.IgnoreError = 0
+      END
+      
+      IF gstgvcFTPConfiguration.gbAnonymous=False THEN
+      	// Named connection
+      	IF gstgvcFTPConfiguration.gbAdvanced=False THEN
+      		// Standard setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address,gstgvcFTPConfiguration.gsUser_Name,gstgvcFTPConfiguration.gsPWD_user)		
+      	ELSE
+      		// Advanced setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address,gstgvcFTPConfiguration.gsUser_Name,...
+      					gstgvcFTPConfiguration.gsPWD_user,gstgvcFTPConfiguration.gnPort_number,gstgvcFTPConfiguration.gnConnectionType,gstgvcFTPConfiguration.gntimeout)
+      	END  	
+      ELSE
+      	// Anonymous connection
+      	IF gstgvcFTPConfiguration.gbAdvanced=False THEN
+      		// Standard setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address)
+      	ELSE
+      		// Advanced setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address,"","",gstgvcFTPConfiguration.gnPort_number,gstgvcFTPConfiguration.gnConnectionType,gstgvcFTPConfiguration.gntimeout)
+      	END  	
+      END                    
+      
+      HourGlass(False)
+     type : 458752
+   -
+     name : bCompareRecord
+     procedure_id : 1676878240305818076
+     type_code : 14
+     code : |1+
+      // Syntax:
+      //[ <Result> = ] cCompareRecord ()
+      // Compare the current record to the requested configuration
+      // Parameters:
+      //	None
+      // Return value:
+      // 	boolean: Returns True if the information is identical
+      PROCEDURE bCompareRecord()
+      
+      IF CONNECT.Login ~= gstgvcFTPConfiguration.gsUser_Name THEN RESULT False
+      IF CONNECT.FTP_Addr ~= gstgvcFTPConfiguration.gsFTP_Address THEN RESULT False  
+      IF CONNECT.Password ~= gstgvcFTPConfiguration.gsPWD_user THEN RESULT False
+      IF gstgvcFTPConfiguration.gbAdvanced <> CONNECT.Advanced THEN	RESULT False	
+      IF gstgvcFTPConfiguration.gbAnonymous <> CONNECT.Anonymous THEN RESULT False	
+      IF gstgvcFTPConfiguration.gnPort_number <> CONNECT.PortNum THEN RESULT False	
+      IF gstgvcFTPConfiguration.gnConnectionType <> CONNECT.ConnectionType THEN RESULT False	
+      IF gstgvcFTPConfiguration.gntimeout <> CONNECT.ConnectionTimeout THEN RESULT False
+      IF gstgvcFTPConfiguration.gnTransferType <> CONNECT.TransferType THEN RESULT False
+      IF gstgvcFTPConfiguration.gnConnectionSecurity <> CONNECT.ConnectionSecurity THEN RESULT False
+      IF gstgvcFTPConfiguration.gbIgnoreError <> CONNECT.IgnoreErrors THEN RESULT False
+      
+      // The information is identical by default
+      RESULT True
+      
+     type : 458752
+   -
+     name : LoadConfiguration
+     procedure_id : 1676878240305883612
+     type_code : 14
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //LoadConfiguration ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      // Example:
+      // Indicate an example.
+      //
+      PROCEDURE LoadConfiguration()
+      
+      // Retrieve the profile stored
+      gstgvcFTPConfiguration.gsProfile = LoadParameter("Profile","")
+      
+      // Read the record corresponding to the profile
+      IF gstgvcFTPConfiguration.gsProfile<>"" THEN
+      	HReadSeekFirst(CONNECT,Text,gstgvcFTPConfiguration.gsProfile)
+      	IF HFound(CONNECT) THEN
+      		// Store the parameters of the current profile
+      		gstgvcFTPConfiguration.gsUser_Name 	= CONNECT.Login
+      		gstgvcFTPConfiguration.gsPWD_user 	= CONNECT.Password
+      		gstgvcFTPConfiguration.gbAnonymous 			= CONNECT.Anonymous
+      		gstgvcFTPConfiguration.gbAdvanced 			= CONNECT.Advanced
+      		gstgvcFTPConfiguration.gnPort_number 		= CONNECT.PortNum
+      		gstgvcFTPConfiguration.gnConnectionType 		= CONNECT.ConnectionType
+      		gstgvcFTPConfiguration.gsFTP_Address 		= CONNECT.FTP_Addr
+      		gstgvcFTPConfiguration.gntimeout 			= CONNECT.ConnectionTimeout
+      		gstgvcFTPConfiguration.gnTransferType 		= CONNECT.TransferType
+      		gstgvcFTPConfiguration.gnConnectionSecurity		= CONNECT.ConnectionSecurity
+      		
+      		gstgvcFTPConfiguration.gbIgnoreError 		= CONNECT.IgnoreErrors
+      	END
+      END
+     type : 458752
+  templates :
+   -
+     name : WIN_CONNECTION
+     identifier : 0x1557969f0275adb8
+     code_elements :
+      internal_properties : CAAAAAgAAABKbch/s44i4Mq2ucV7u4BmPXWl9BR7GA4zLumE1HvxIoyefh3FSw86tD+fNtYtUz5LCLJ+Nvbcn4reJ0mpk7GS4vkfKu+6hvGZtuOHqXirYZEv5fXHuTBnv++UdJ8ttkQvyw==
+      type_code : 1
+      p_codes :
+       -
+         code : |1+
+          
+          
+       -
+         code : |1+
+          
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+       -
+         code : |1+
+          
+          
+         type : 2
+       -
+         code : |1+
+          
+          
+         type : 11
+       -
+         code : |1+
+          
+          
+         type : 12
+       -
+         code : |1+
+          
+          
+         type : 17
+       -
+         code : |1+
+          
+          
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAABAQoHo7e0KLUuo9JVZHxjriK9OWWJjRo0FLLFVj3UVI3LlcnspdTXUpEc/fJitualOAJHXbP1C+JSEwd7uhoY+PpKBWuHE8Qdw5yigYVh9BFpmBT1Z9pqZuEaKFMugWVPqb6M=
+  original_name : FenConnexion
+resources :
+ string_res :
+  identifier : 0x3c518fb104d85f2a
+  internal_properties : CAAAAAgAAABYKp3KBci7QSSULtu2KtzNYqygVd9Dt6eqyJwtSaB1ofcXGciKNhQ76Fd0dKQ+6N8/xw==
+  strings :
+   -
+     text :
+      en-GB : Do you want to delete profile <%1>?
+     index : 4
+   -
+     text :
+      en-GB : The connection was not established.
+     index : 5
+   -
+     text :
+      en-GB : Enter the address of the FTP server.
+     index : 6
+   -
+     text :
+      en-GB : You must specify a name for this profile.
+     index : 7
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

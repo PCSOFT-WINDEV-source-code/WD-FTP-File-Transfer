@@ -1,0 +1,520 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : SET_FTP_parallel_tasks
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x174577e50567bd55
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAChOWXWK9blMVkh0JuOGD4nPZ4Vw8SkNsVBGXMLWPrQB8yfV3H3Uwpj+47YmethKHJsEf8lnw53OTTMN4zLtrSAmtDXFAytn9deh3sBlGgGvFVwH1O2SY9njXg+bQTukZ+AiXftPZIdh30=
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAP6d5U6fqnsvuAO474g2A5X0Ek8LiRQ+fTvg+kBFFHJ2UITmxrdOkhrK8/MJSiZU5DvtLcwHjAEmi3/uOyPjzeNz/CEW9yDl7+mEii6DAWpLWXhrkcCRydqhprcpF3xS6vQ50PjJphz4BS86g=
+     code : |1+
+      //Structure for an element of the table
+      STFileToRetrieve	is Structure
+      	sFileName				is string // Name of the file to transfer
+      	sFileNameWithoutPath	is string // Name of the file to transfer without the path (for search)
+      	bCurrentTransfer		is boolean // True if the transfer is in progress, False if not started or ended
+      	bTransferCompleted		is boolean // True if the transfer is ended
+      	bTransferOK			is boolean // True if the transfer was successfully performed
+      	sTC_Review			is string  // Details of the error if a problem occurs
+      	nFileSize			is int  // Total size of the file in bytes
+      	nSizeAlreadyRetrieved	is int  // Size transferred in bytes
+      	sDestintationDir 		is string // Directory where the file will be transferred
+      	sDirection 					is eTransferDirection // Direction in which the transfer will be done ("ToServer" or "ToClient"), it is an enumeration to avoid the input errors
+      	nConnectionID 			is int // ID of the connection of the parallel task
+      END
+      
+      // Constants for indicating the status of the file in the table (if a progress bar table is used)
+      EFTPStatus is énumération
+      	FTPToProcess	= "To process"	
+      	FTPInProgress	= " Current" 			
+      	FTPDone	= "Done"
+      	FTPCanceled	= "Canceled"		
+      	FTPInError	 = "In Error"			
+      END
+      
+      
+      // Array that will contain the list of files to transfer
+      garrArrayListFiles		is array dynamic of STFileToRetrieve
+      // Number of transferred files
+      gnNbFileCompleted			is int
+      // Nb of files successfully transferred
+      gnNbFileOK				is int
+      // Total size to transfer in bytes
+      gnTotalSizeToRetrieve		is int
+      
+      // Name of the global progress bar control that must be updated during the transfers
+      gsNameProgressBarControl				is string=""
+      
+      // This table must contain 6 columns: 
+      // Col 1: Numeric for the number of the internal array (invisible if possible)
+      // Col 2: Combo box set to: 1 for processing, 2 for in progress, 3 for done, 4 for error
+      // Col 3: text for the name of a file
+      // Col 4: Integer for the size retrieved
+      // COL 5: TotalFilseSize
+      // Col 6: Image for the progress bar
+      
+      // Name of an image control that will contain the image that will be used to draw the progress bar in the table control (column6)
+      gsNameImageControlForTableProgressBar		is string =""
+      // Name of the control where the real number of simultaneous connections will be displayed
+      gsNbConnectionControl					is string =""
+      
+      // List of all the errors that occurred during the transfers	
+      gsErrorList						is string
+      
+      // Date/time of the beginning of transfer (to calculate the estimated remaining time and the transfer rate)
+      gdtgdhBeginningTranfer					is datetime
+      
+      // Verify?
+      gbCheckEnd    is boolean = False
+     type : 720896
+  procedures :
+   -
+     name : ftp_ParallelTask
+     internal_properties : CAAAAAgAAAATsorZd+ZsWhdLYr5kWwLp6IgQtt/aeiSsXEkBrD8vS2ggHNiFpaXUq2GkdLjcRU5y6ALEw6uGsSllWosLtdsRjL8K80W+kYdJP3aqZ3I5e5ZppTylDqQgeZKUDWhJGhTD1V2Nvfj9edLpVvLbFa379ZCNZnWAjvQC+2gnAO7Dn8PpVpGBJ9qV6KpjaODI9+zIGkHgdGfTVjrejzM69fk2yOWJNxC68Dq/x+aFcf9uB6h+tED0
+     procedure_id : 1676878261787344213
+     type_code : 15
+     code : |1-
+      // Summary: Sends the file that is found at the subscript passed in parameter in the garrArrayListFiles array
+      // Parameters:
+      //	nArraySubscript (integer): subscript of the file to transfer
+      //	Configftp (STFTPConfiguration): FTP configuration of the application
+      //	stAnFTPFile (STFileToRetrieve): FTP file to transfer
+      // Return value:
+      // 	None
+      
+      PROCEDURE ftp_ParallelTask(LOCAL nArraySubscript is int,Configftp is STgvcFTPConfiguration,stAnFtpFile is STFileToRetrieve)
+      
+      // Local variables
+      
+      // Identifier of the connection of the parallel task to the FTP server
+      nID_ParallelTaskConnection is int =-1
+      // ASCII/Binary transfer
+      nTransferMode			is int
+      
+      
+      
+      
+      // The parallel task creates a connection
+      nID_ParallelTaskConnection = ftp_AskConnectionID(Configftp)
+      // If it cannot connect, it means that the FTP server is saturated, therefore we wait before we try to reconnect
+      WHILE nID_ParallelTaskConnection = -1
+      	
+      	// Wait up to 30 times during 1 second, which means 30 seconds before trying to reconnect
+      	LOOP (30)
+      		// Every second, check whether the parallel task must be ended
+      		ThreadPause(10)
+      		IF ExecuteMainThread(ftp_EndTask)=ReturnTasksOK THEN
+      			ParallelTaskCancel()
+      		END
+      		IF ExecuteMainThread(ftp_EndCurrentTask,nArraySubscript)=ReturnTasksOK THEN
+      			ParallelTaskCancel()
+      		END
+      	END
+      	// Try to connect again
+      	nID_ParallelTaskConnection = ftp_AskConnectionID(Configftp)
+      END
+      
+      
+      
+      IF Configftp.gnTransferType = 1 THEN
+      	// Transfer in ASCII mode
+      	nTransferMode=ftpASCIIMode
+      ELSE
+      	// Transfer in binary mode
+      	nTransferMode=ftpBinaryMode
+      END	
+      
+      
+      
+      // FTP retrieval
+      IF stAnFtpFile:sDirection=ToServer THEN
+      	stAnFtpFile:bTransferOK =FTPSend(nID_ParallelTaskConnection, stAnFtpFile:sFileName, stAnFtpFile:sDestintationDir,ftp_CheckProgress, nTransferMode) 
+      ELSE	
+      	stAnFtpFile:bTransferOK = FTPGet(nID_ParallelTaskConnection, stAnFtpFile:sFileName,  stAnFtpFile:sDestintationDir, ftp_CheckProgress, nTransferMode)
+      END
+      
+      
+      	INTERNAL PROCEDURE ftp_CheckProgress(nTotal is int <utile = "mandatory to track ftpsend">, nCurrent is int)     
+      	         
+      	IF garrTransferSize[nArraySubscript] = 0 THEN
+      		garrTransferSize[nArraySubscript] = nTotal
+      	END
+      	IF ExecuteMainThread(ftp_EndTask)=ReturnTasksOK THEN
+      		FTPDisconnect(nID_ParallelTaskConnection)
+      		ParallelTaskCancel()
+      	END
+      	
+      	IF ExecuteMainThread(ftp_EndCurrentTask,nArraySubscript)=ReturnTasksOK THEN
+      		ExecuteMainThread(ftp_EndTransfer,nArraySubscript,True,"",True)
+      		FTPDisconnect(nID_ParallelTaskConnection)
+      		ParallelTaskCancel()
+      	END
+      	
+      	// Ask the main thread to update the element to avoid the concurrency between parallel tasks
+      	ExecuteMainThread(ftp_UpdateElement,nArraySubscript,nCurrent,nID_ParallelTaskConnection)
+      	// Continue to transfer the file
+      	RESULT True
+      	END
+      
+      
+      // Close the connection, the file is transferred
+      FTPDisconnect(nID_ParallelTaskConnection)
+      
+      // If problem we get the error
+      IF stAnFtpFile:bTransferOK = False THEN
+      	stAnFtpFile:sTC_Review = <§@1600397e0034b7d70000§>+ErrorInfo()	
+      END
+      
+      gnNbFileCompleted++ // Number of incremented completed files
+      stAnFtpFile:bTransferCompleted=True
+      
+      // Success?
+      IF stAnFtpFile:bTransferOK THEN 
+      	gnNbFileOK++ // The nb of files successfully retrieved has increased
+      ELSE
+      	// Problem, update the error string
+      	gsErrorList += StringBuild(<§@1600397e0034b7d70003§>+CR,stAnFtpFile:sFileName,stAnFtpFile:sTC_Review)
+      END
+      
+      ExecuteMainThread(ftp_EndTransfer,nArraySubscript,stAnFtpFile:bTransferOK,stAnFtpFile:sTC_Review,stAnFtpFile:bTransferCompleted)
+      
+      	
+     type : 458752
+   -
+     name : ftp_StartTransfer
+     internal_properties : CAAAAAgAAAB7bB8RLeRakE1HXvDCi6JXJDc7qvGcGmK6SF0TopsYYnKz7XRdW4EqrWEw0jqsrZ5Q/GRUielK47epLk0xqetJ+utEM0c4gZFLDz4A6ZJdL1jRI4i3aDTip/bJts8UEX9M2FCOdG/mXs8WGz9mpFwelq/sS8BTWzGPGKXsIzUCypzEYaJIfjNq5cd0ffvvhn8Dy3vxk72cr0P3oCQhaASVXXAnCM0F1R9YAPeOEHrD4EOzsqic
+     procedure_id : 1676878261787409749
+     type_code : 15
+     code : |1+
+      // Summary: Starts a parallel task to transfer the file
+      // Parameters:
+      //	sLocalPath (UNICODE string): Path of the file or folder in local
+      //	sRemotePath (ANSI string): Path of the file or folder on the FTP server
+      //	direction (enumeration): Indicates whether the transfer is done from the local computer to the server or in reverse direction
+      //	local_gstFTPConnection (STFTPConnection): Connection used by the thread to transfer the file
+      //	local_gstFTPConfiguration (STFTPConfiguration): Configuration of the connection used by the thread to transfer the file
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ftp_StartTransfer(sLocalPath is string,sRemotePath is string, direction is eTransferDirection, local_gstFTPConnection is STgvcFTPConnection, local_gstFTPConfiguration is STgvcFTPConfiguration)
+      
+      // Array subscript for the file that will be transferred
+      nArraySubscript		is int
+      // Structure of the type of the array that contains the list of files
+      stAnFtpFile is STFileToRetrieve
+      
+      IF direction=ToServer THEN
+      	// Some parameters depend on the server direction
+      	stAnFtpFile:nFileSize=fSize(sLocalPath)
+      	stAnFtpFile:sFileName=sLocalPath
+      	stAnFtpFile:sFileNameWithoutPath=ExtractString(sLocalPath,1,fSep,FromEnd)
+      	stAnFtpFile:sDestintationDir = sRemotePath
+      	FTPAttribute(local_gstFTPConnection.nConnectionID,sRemotePath+["/"]+fExtractPath(sLocalPath,fFileName+fExtension))
+      	IF ErrorOccurred = False THEN
+      		IF Dialog( StringBuild(<§@1600397e0034b7d70005§>,stAnFtpFile:sDestintationDir+["/"]+stAnFtpFile:sFileNameWithoutPath),[<§@1600397e0034b7d7000f§>,<§@1600397e0034b7d7000e§>],1,2,dlgIconQuestion) =2 THEN
+      			RETURN
+      		END
+      	END
+      	
+      	
+      ELSE
+      	// ToClient
+      	// Some parameters depend on the server direction
+      	//stAnFTPFile:nFileSize=FTPSize(local_gstFTPConnection.nConnectionID,sRemotePath)
+      	stAnFtpFile:sFileName=sRemotePath
+      	stAnFtpFile:sFileNameWithoutPath=ExtractString(sRemotePath,1,"/",FromEnd)
+      	stAnFtpFile:sDestintationDir = sLocalPath
+      	IF fFileExist(sLocalPath+[fSep]+fExtractPath(sRemotePath,fFileName+fExtension)) = True THEN
+      		IF Dialog( StringBuild(<§@1600397e0034b7d70006§>,stAnFtpFile:sDestintationDir+[fSep]+stAnFtpFile:sFileNameWithoutPath),[<§@1600397e0034b7d7000f§>,<§@1600397e0034b7d7000e§>],1,2,dlgIconQuestion) =2 THEN
+      			RETURN
+      		END
+      	END
+      	
+      END
+      
+      // Direction of transfer
+      stAnFtpFile:sDirection = direction
+      
+      // Increment the total cumulated size of the files to retrieve
+      gnTotalSizeToRetrieve+=stAnFtpFile:nFileSize
+      
+      // Add the files found on the FTP server to the array (files to be retrieved)
+      nArraySubscript=ArrayAdd(garrArrayListFiles,stAnFtpFile)
+      ArrayAdd(garrTransferSize)
+      ArrayAdd(garrCurrentTransfer,nArraySubscript)
+      
+      
+      // Start a parallel task to send a file, pass the array subscript of the file in parameter in order to retrieve the parameters for sending the file
+      parallel_task is a ParallelTask 
+      parallel_task = ParallelTaskExecute(ftp_ParallelTask,(nArraySubscript,local_gstFTPConfiguration,stAnFtpFile))
+      
+      ArrayAddLine(WIN_MAIN.garr_ParallelTask,parallel_task)
+      
+      
+     type : 458752
+   -
+     name : ftp_AskConnectionID
+     internal_properties : CAAAAAgAAABwUpReHHxOSVtMqIg3gNczQAgbpl7pRz1FVAqvL/HciKT5jZLC9V//uxlHiF3CcGL5pAy903g1W95Ef3Kt0EjCX5GVuSThkI0pwqZW5DPP1Tfp4OBrOjqK8TLjdI+Wl51q/FSasiOimgtSgxfeOICsdI88/yhp9V/xusNkX9Ua0s/URaHVnBxGmYrGXYQakmaN0QDdVQ==
+     procedure_id : 1676878261787475285
+     type_code : 15
+     code : |1+
+      // Summary: Asks to connect to the FTP server
+      // Parameters:
+      //	Configftp (STFTPConfiguration): FTP configuration for the connection parameters
+      // Return value:
+      // 	integer: Identifier of the connection or -1 if the connection failed
+      //
+      PROCEDURE ftp_AskConnectionID(Configftp is STgvcFTPConfiguration)
+      // Local variables
+      sProtocol is string
+      
+      // Find the protocol according to the security of the connection
+      SWITCH Configftp.gnConnectionSecurity
+      	CASE EConnectionSecurity.NotSecured
+      		// not secure	
+      		sProtocol = ""
+      		
+      	CASE EConnectionSecurity.SFTP
+      		// secure: SFTP protocol
+      		sProtocol = "sftp://"
+      	CASE EConnectionSecurity.FTPS
+      		// secure: FTPS protocol
+      		sProtocol = "ftps://"
+      	CASE EConnectionSecurity.FTPES		
+      		// secure: FTPES protocol	
+      		sProtocol = "ftpes://"
+      		
+      END
+      
+      IF Configftp.gbIgnoreError = True THEN
+      	FTP.IgnoreError = ftpIgnoreInvalidCertificateName + ftpIgnoreInvalidCertificate + ftpIgnoreExpiredCertificate
+      ELSE
+      	FTP.IgnoreError = 0
+      END
+      
+      IF Configftp.gbAnonymous=False THEN
+      	// named connection
+      	IF Configftp.gbAdvanced=False THEN
+      		// standard setting
+      		RESULT FTPConnect(sProtocol+Configftp.gsFTP_Address,Configftp.gsUser_Name,Configftp.gsPWD_user)		
+      	ELSE
+      		// advanced setting
+      		RESULT FTPConnect(sProtocol+Configftp.gsFTP_Address,Configftp.gsUser_Name,...
+      		Configftp.gsPWD_user,Configftp.gnPort_number,Configftp.gnConnectionType,Configftp.gntimeout)
+      	END  	
+      ELSE
+      	// Anonymous connection
+      	IF Configftp.gbAdvanced=False THEN
+      		// standard setting
+      		RESULT FTPConnect(sProtocol+Configftp.gsFTP_Address)
+      	ELSE
+      		// advanced setting
+      		RESULT FTPConnect(sProtocol+Configftp.gsFTP_Address,"","",Configftp.gnPort_number,Configftp.gnConnectionType,Configftp.gntimeout)
+      	END  	
+      END                    
+      
+     type : 458752
+   -
+     name : ftp_UpdateElement
+     internal_properties : CAAAAAgAAAB+UJYkWrVL2dt8sCh/GN8DwGijRvYhN8U9zNrXf9EcUIyxLcpCBcfv+5k/yGU62LIpZNTd23AFk3ac74rdgMhKZ9n18WSRaL1pcvK62Dc7wTNlfFz/DoZmRRb/+BP689kGCLBm5vd+9l8WbxsiHNwY4HvIuzz9ges13l8oY6mWfjswEZ05cFgCDZ7SodheeaxrN/7fVw==
+     procedure_id : 1676878261787540821
+     type_code : 15
+     group : 2
+     code : |1+
+      // Summary: Procedure run by the main thread further to a request made by a parallel task to update the array of files currently transferred
+      // Parameters:
+      //	nArraySubscript (integer): Subscript of the array to identify the element that will be updated
+      //	nCurrent (integer): Number of file bytes already transferred
+      //	nIDConnection (integer): <specify the role of nIDConnection>
+      // Return value:
+      // 	None
+      
+      PROCEDURE ftp_UpdateElement(nArraySubscript is int, nCurrent is int, nConnectionID is int)
+      // Update the array element currently transferred
+      SET_FTP_parallel_tasks.garrArrayListFiles[nArraySubscript].nSizeAlreadyRetrieved=nCurrent
+      SET_FTP_parallel_tasks.garrArrayListFiles[nArraySubscript].bCurrentTransfer=True
+      SET_FTP_parallel_tasks.garrArrayListFiles[nArraySubscript].nConnectionID = nConnectionID
+      
+      
+      
+     type : 458752
+   -
+     name : ftp_EndTransfer
+     procedure_id : 1676878261787606357
+     type_code : 15
+     group : 2
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Parameters:
+      //	nArraySubscript (integer): subscript of the array to update
+      //	bTransferOK (boolean): boolean to find out whether an error occurred during the transfer
+      //	sStatusReport (ANSI string): text of the error if the transfer failed
+      //	bTransferCompleted (boolean): boolean to find out whether the transfer is ended
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ftp_EndTransfer(nArraySubscript is int, bTransferOK is boolean, sTC_Review is string, bTransferCompleted is boolean)
+      // Update the array of files
+      garrArrayListFiles[nArraySubscript]:bTransferCompleted=bTransferCompleted
+      garrArrayListFiles[nArraySubscript]:bTransferOK=bTransferOK
+      garrArrayListFiles[nArraySubscript]:sTC_Review=sTC_Review
+     type : 458752
+   -
+     name : ftp_EndTask
+     procedure_id : 1676878261787671893
+     type_code : 15
+     group : 2
+     code : |1+
+      // Summary: Informs the parallel task that it must stop
+      // Parameters:
+      //	None
+      // Return value:
+      // 	ANSI string: ReturnTasksOK if the tasks must be ended
+      //
+      //
+      PROCEDURE ftp_EndTask()
+      // End of tasks?
+      IF  bEndTask THEN
+      	RESULT ReturnTasksOK
+      ELSE
+      	RESULT ReturnTasksNO
+      END
+     type : 458752
+   -
+     name : ftp_EndCurrentTask
+     procedure_id : 1676878261787737429
+     type_code : 15
+     group : 2
+     code : |1-
+      // Summary: Cancels a current task
+      // Parameters:
+      //	nArraySubscript (integer): Value to find in the array
+      // Return value:
+      // 	ANSI string: // 	None
+      //
+      PROCEDURE ftp_EndCurrentTask(nArraySubscript is int)
+      // Finds element
+      nElementSubscript is int = ArraySeek(WIN_MAIN.garr_TaskCancelation,asLinear,nArraySubscript)
+      
+      // Element found?
+      IF nElementSubscript<>-1 THEN
+      	ArrayDelete(WIN_MAIN.garr_TaskCancelation,nElementSubscript)
+      	RESULT ReturnTasksOK
+      ELSE
+      	RESULT ReturnTasksNO
+      END
+     type : 458752
+   -
+     name : ftp_ManageServerList
+     internal_properties : CAAAAAgAAACczbfKkM1VncOaoC92bY3Hoz6YVY1lS8sSAS69zTUvIKDa83juISdCiEZNB6kboPsjfcVdnB/2/bqywXKCi6PBGglZgCodXCjscDn4HPp3VzSNU79snnAAlscBh09rq3nvEgMtLZdwEhatuy4a1/IKXxH9WMUV1UR/QKN3CZeexZqGdNAkvbNaYUO7uejzrbWWRo1QjBllhA==
+     procedure_id : 1676878261787802965
+     type_code : 15
+     group : 4
+     code : |1+
+      // Summary: Manages the transfer of elements
+      // Parameters:
+      //	arrElementTransfer (array): Array of elements to transfer
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ftp_ManageServerList(arrElementTransfer is array of ElementToTransfer)
+      
+      // Browse the elements to transfer
+      FOR EACH ElementToTransferInParallel of arrElementTransfer
+      	WHILE SemaphoreStart("PoolThread",10)=False
+      		IF bEndTask = True THEN
+      			ParallelTaskCancel()
+      			RETURN
+      		END
+      		ThreadPause(10)
+      	END
+      	// Transfer 1 file per parallel task
+      	// If the application is locked to 8 parallel tasks but if a 9th task is called, it is considered as being pending by the system.
+      	// When a previous task is ended, the pending task is started by the system.			
+      	IF bEndTask = True THEN
+      		ParallelTaskCancel()
+      		RETURN
+      	END
+      	ftp_StartTransfer(ElementToTransferInParallel.sPathLocalElement,ElementToTransferInParallel.sPathRemoteElement,ToServer,gstgvcFTPConnection,gstgvcFTPConfiguration)
+      END
+     type : 458752
+   -
+     name : ftp_ManageLocalList
+     internal_properties : CAAAAAgAAACGi7OxPlL/NKYRSvY35gxpkn6PMmuUfRpKEjS9hz/bWoFmm3iyr9puglvz3VgPzvh2NoGt98WJZ+PLoLi+PUuNUCPPd9KJrj8A0CfDWbxc8oWxz7/Oc5FF9XKTEH9RYAiH71DUncjbeqL5rcjBYxf7/cbb61kGF3F1bgsEADm+y/VUOyfrAnuVgAPHz7OsK3vQEyknHw==
+     procedure_id : 1676878261787868501
+     type_code : 15
+     group : 4
+     code : |1+
+      // Summary: Manages the transfer of elements
+      // Parameters:
+      //	arrElementTransfer (array): Array of elements to transfer
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ftp_ManageLocalList(arrElementTransfer is array of ElementToTransfer)
+      
+      // Browse the elements to transfer
+      FOR EACH ElementToTransferInParallel of arrElementTransfer
+      	WHILE SemaphoreStart("PoolThread",10)=False
+      		IF bEndTask = True THEN
+      			ParallelTaskCancel()
+      			RETURN
+      		END
+      		ThreadPause(10)
+      	END
+      	// Transfer 1 file per parallel task
+      	// If the application is locked to 8 parallel tasks but if a 9th task is called, it is considered as being pending by the system.
+      	// When a previous task is ended, the pending task is started by the system.			
+      	// Browse the elements to transfer
+      	IF bEndTask = True THEN
+      		ParallelTaskCancel()
+      		RETURN
+      	END
+      	ftp_StartTransfer(ElementToTransferInParallel.sPathLocalElement,ElementToTransferInParallel.sPathRemoteElement,ToClient,gstgvcFTPConnection,gstgvcFTPConfiguration)
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1600397e0034b7d7
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : "The file transfer failed. "
+     index : 0
+   -
+     text :
+      en-GB : "Error wile transferring %1 file: %2"
+     index : 3
+   -
+     text :
+      en-GB : "The %1 file already exists on the server, do you want to replace it by the local file?"
+     index : 5
+   -
+     text :
+      en-GB : "The %1 file already exists locally, do you want to replace it by the file found on the server?"
+     index : 6
+   -
+     text :
+      en-GB : Do not replace
+     index : 14
+   -
+     text :
+      en-GB : Replace
+     index : 15
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,237 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD FTP File Transfer
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : WD FTP File Transfer
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : CAAAAAgAAAACpqTn2fhxTqRUFee8+BbLgba7Wb9su55ZwbNDjKCO+PqYPK/QZg+KP40kuBak+fqYZGtMOurXUaEfT4dwoMp5/cqznsyOSlRTe8VDafAOxp7qXQoACpdSHNMOedwm74DfEBoktql84qMx3blu88MjXc5rCAW670H9D5vY6rzFIW8lJF6ZiQwKLyV4w+NVP0WTS9gQBhsmfuLfJXMYC9vwmH4cNVK94wEwK7sYkCyEqdIdnrHE6A1kQdVmJwYvwPOwhYK3KCKqH1Nl/IB6/b0NScdOrjJ7S7LUn/GQZKimb21HqdJQnrBHM+zc1SLdEoEQqbbBfq3RkBwKZrt2JXt0UolYM7UHKQGmox1wqCB83AKc2h9HBdB2BA02GgeI0eTlutHw1JzbweD8PkFOlwuDs0alaZmHnV8vxxqUWuJXtbzvb2ogFM9DeOSpmsNkNxqF4GAUbsXk+O710hvtPlU7wgdcFlC0poKr52pz0BQjhxIyQ0C2EvmlX4mOBoQsT9HwpsNWuMHr32vKuZuPKZ6HzFuTuYJgYf0DM52ZFxDkcoChCA8r4Z/H6wkXS+aTnUreHrA7PqeKlFniPn32fLPhcdvs80WFr9R3Sm+stPNDF/QjdwsGmhnM2F807eb0zNBy9m4N8kHQ7nlayoftPCSLt+CBwb4kjebrWrTeK952fsHSEOIP46WinKI2EfK++CftBFgElJR9rLWARUkkImf0cy2DCXjQ2vYeNOoo23y7gYqRdcpIbwebHOk3cFuMO4h2C5a28n+5WWVjhyQ4aisozGzeARKw41tGiDZgR/6GHLk8wH1Cr9//Xlue5q22O08JCT6LI/ioFAHoyQvKedEuEGY1gQuKtKzPccfEjZ0uDQIUXi7mk9iHXeJ2/qWWO7q5w6Fqwg0L3UIh/wsC2euwMieLXl+L3C22rXn00SZt//96Ca884MMOUdup9/fVl4bxz6P7s0Njt0eY+0f6tKsq/lXj47mZtDm+ZfajJFmyss7nCYsIfM8JH80S+uSuagPdm61V6oFyMQtM4ncoplwMXGNNN56lMijceepXpyXzUH2yEQWBZQ35VIRTRGTyfwkZKV6wAZMcmv4C+hY+AM88wDgcn8BA+R3tK/FM0x4qZlcT5Ayea4lpmhDAFHfmwYMmgPjYKBPDzKjsggVs3Pf3NkXGFlXTTh5YyvUgvP7LlO6KrNdkWn0fNSi2tBRYmV5arQanbEipluvdBWAL/C0PRWkqKsorC+KXoQkLrA2+refTFxy+2MI61HG3vBujb2awCDUNTMTupsCjT2FR4HwAAscXauSiFNKspGZvfs9n0TbJ7yikz6SJaRsUL4XDTaAQUY+t5MOGSkhCCC2pyhKKKPFeiaaowYWCtv8SWYlTrm/WzOxBUr+jea6SG0f5ytIfUHdRfUyEVFIa0htDEl/9IvEZiA/J2Gg1+Fnnb6HTiLL/DS40oH6o3wZSUNKumAFPgBkw/cXnF6OHTQphaEvB56qSTxubzEJUsE1gI2OBqHzFNfx+ff+Z4WxlNLcTU6OXFGioKNdTuSsD5nvIC1onbdqUnbXgeY2NRUCDhiAiMWEqnJJ+mKTxdJXRV2c76PBmQYH6JOBMyg3gLWySfbgQOOSc1EMMJ7VMX0Kc251RcBpKhCQK4aKaAkjsK5R1ta10Lfy7HcP3FC8XMvjoJKlesuB3DnMf8HyqGTxRsrXYptSecNBNWFCN2AERWlOSInIly3CBZRdW2FQ6pFLe1KV7ZZT6Q46+GY2kLnmC8tv8UeV7OsbfwwT07sLCsb9XLL3R9KTch4GbCy7013hxqZGM/3eWq2tWYI81VENQkE3mGpasbqte3hXZdvsz6SyykJqL1qCXrXAH9WWna5BVF/pPjVmecy+kXwt6XeVhxoVmlMmczdDuQK6K3R2kY1zsd6iz/rJ8R6PBU8AvwZojZidtVSmU2lxC+g4MSS9wY+nWhuMfmFmrsBq9xpFtUUTPTVKZvNQDJ8YZ9rHb+BTS0aA1zo5ylZy3up6hMwq7Cdm9zLOwHhvooAr1E0C10Cx0lO2KMrB+GmkoTt0EWC3Oj+/R3BHRIZnw/qlzR3Yiou/DIcZJ4EzTQ+7If9YZ40lJ8huANppO/8VS5mL/qO8vTv4+leWNKkvX0je0/RK5
+ configurations :
+  -
+    name : WD FTP File Transfer
+    internal_properties : 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
+    configuration_id : 18211823036862837739
+    type : 1
+    generation_name : WD FTP File Transfer.exe
+    version :
+     major_version : 21
+     minor_version : 59
+     internal_generation_version : 15
+     autoincrement_version : false
+    icon_filename : .\description.ico
+    language : 2
+    telemetry :
+     status : disabled
+ elements :
+  identifier : 0x4acc51e50015676a
+  elements :
+   -
+     name : Global procedures of WD FTP File Transfer
+     identifier : 0x49259d78000189bc
+     internal_properties : CAAAAAgAAADsasTQ75ScTxYVb/KtfuexguHZgcvLyvpJp4MaDQyIkGhazpqLtTmqY9/ZJ+/hmQ/5eQ==
+     physical_name : .\Global procedures of WD FTP File Transfer.wdg
+     type : 7
+   -
+     name : WIN_DIRECTORY_CREATION
+     identifier : 0x3db51b854b2b2b15
+     internal_properties : CAAAAAgAAACppZH1Mm9HaE1AStlEZuSyn94mPqFiKjX3UHbtEjjaZl5WzJx0jBKFDgr0zFSMdGSstA==
+     physical_name : .\WIN_DIRECTORY_CREATION.wdw
+     type : 2
+   -
+     name : WIN_RENAME_FILE
+     identifier : 0x3db51b8653a02b1f
+     internal_properties : CAAAAAgAAACSaMre7VrSjaBj8WAzJpGPoCOvty7/UGPolhXjbsxAgESKml61Q8s88S2XYSHfmw33fw==
+     physical_name : .\WIN_RENAME_FILE.wdw
+     type : 2
+   -
+     name : WINTPL_Application
+     identifier : 0x4925662400006ca6
+     internal_properties : CAAAAAgAAADoZtDM+6AIEyr5c+axpRd5MhdhcUl5GFB24QGtmo8FyzH9B+E3wU2+d6MdmxvVrSPtdQ==
+     physical_name : .\WINTPL_Application.wdt
+     type : 18
+   -
+     name : WIN_MAIN
+     identifier : 0x3db51b7f34c82a93
+     internal_properties : CAAAAAgAAABl4U1RbgsjPIGEno2IzXhmh5SC2h/OHgHEH1b2V+Orba9x9fMg2GZZ0k5IsHBgGIhw8A==
+     physical_name : .\WIN_MAIN.wdw
+     type : 2
+   -
+     name : WIN_CONNECTION
+     identifier : 0x3db51b8214ed2acf
+     internal_properties : CAAAAAgAAACutIaaKVbekVRn9eS3bdlH6Onn/+6fWs5ODPmWPQ+FS41V05WBv09A9SGbZS2jX1G7uw==
+     physical_name : .\WIN_CONNECTION.wdw
+     type : 2
+   -
+     name : SET_FTP_parallel_tasks
+     identifier : 0x46003981003cc246
+     internal_properties : CAAAAAgAAAD9WdXJ9qMLFC0v/jJYz65o54CSArfl/imKNFbbNfEly3Gf6dlsXOVYjrYgmBjIsCDoaA==
+     physical_name : .\SET_FTP_parallel_tasks.wdg
+     type : 7
+   -
+     name : WIN_Wait_Disconnection
+     identifier : 0x46097763012e7e7e
+     internal_properties : CAAAAAgAAACehPaqGUbugUizjSkgyA91hOvTu4rB/keug4wj4CZ2knpkGlTVdD/AKRGLdT2zT0GLiw==
+     physical_name : .\WIN_Wait_Disconnection.wdw
+     type : 2
+   -
+     name : SET_Observer
+     identifier : 0x460a447c002da920
+     internal_properties : CAAAAAgAAACd+fWpFkPr9E2JRT1+dotQDb6ImC1FQtKOm5mjS9s7laNJ1VTWKtK6LhaAeDioUECIiA==
+     physical_name : .\SET_Observer.wdg
+     type : 7
+   -
+     name : DragAndDrop
+     identifier : 0x460d076d00e5e3c4
+     internal_properties : CAAAAAgAAABRrYmdKlffkFnYkniUzMFslYT8VNOeO6dTu/bRON48tBzkgtEBx9Yx+iKcZCykXEy0vA==
+     physical_name : .\DragAndDrop.wdc
+     type : 4
+   -
+     name : WinDevMessageBox
+     identifier : 0x46d55b6100d1a261
+     internal_properties : CAAAAAgAAACRbcnd6pefUBlg9lS8MLR1n97Wnr24lumw57jjEhR+kmJSDYVJ/9K5OuLcJOzknAz0fA==
+     physical_name : .\WinDevMessageBox.WDW
+     type : 2
+   -
+     name : WinDevDialogBox
+     identifier : 0x46d55b6700d9ba2f
+     internal_properties : CAAAAAgAAAACeHquHUri/USb9VGzd310wKGPlxBD17pcjPOoj2etE/XdVtQEBNO4JR2HcTGvS70HDw==
+     physical_name : .\WinDevDialogBox.WDW
+     type : 2
+   -
+     name : TEST_Global_procedures_of_WD_Transferring_files_by_FTP
+     identifier : 0x427a4eaa007a4ca2
+     internal_properties : CAAAAAgAAAAvKwcbqNVdDtfmdOey2RZwMRIsvI0ZpLuOu/NTW7fn4S/9BeM2wky/dKAa5q4i3tI6Og==
+     physical_name : .\TEST_Global_procedures_of_WD_Transferring_files_by_FTP.wxt
+     type : 17
+  other_elements :
+   -
+     physical_name : .\Description.rtf
+   -
+     physical_name : .\Description.gif
+  analysis : .\WD FTP File Transfer.ana\WD FTP File Transfer.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - en-GB
+ code_elements :
+  internal_properties : CAAAAAgAAACbgr8XjuY4O/AKZuEsJl01SmUth36vyWfUSx/cflYYsAJwNhwM8VXpaQ1UvLhCSelbCWyMJ+4nB7K9YnEwdsw=
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABj01DQ8G4M5q8r9xU8nxSoVVpEPMx/+xZHMDq/T3nQoik7w4kvZxIIVG5UdK/5yfkXaIjJeEsUR9NiZgY9MlAuFuA+WhuSNzrUTZnIOha5n3k2b/FMeKnEWPVjKXiwr+/r9ZAHBmblpkC6hyIp9D6wrVOj5dhFdurzBMTq3ajKiL8nyz5/FxAJbviIEEwADM8=
+     code : |1-
+      GLOBAL
+      	// Declare a structure
+      	ElementToTransfer is Structure
+      		cElementType is character // Type of element to transfer (directory, file,...)
+      		sElementName is string // Name of folder or file
+      		sPathLocalElement is string // Path of local directory/file for the transfer
+      		sPathRemoteElement is string // Path of remote directory/file for the transfer
+      	END
+      	
+      	STgvcFTPConfiguration is Structure
+      		gsFTP_Address is string				// address of FTP site
+      		gsUser_Name is string			// name of the user
+      		gsPWD_user is string			// password of the user
+      		gbAnonymous is boolean					// anonymous connection 
+      		gbAdvanced is boolean					// connection in advanced mode
+      		gnPort_number is int 				// number of the FTP port of the server
+      		gntimeout is int 						// time-out before abandon
+      		gnConnectionType is boolean				// type of server connection (active or passive)
+      		gsProfile is string					// current profile
+      		gnTransferType is int				// ASCII or Binary transfer
+      		gnConnectionSecurity is EConnectionSecurity		// security of the connection
+      		gbIgnoreError is boolean				// do we have to ignore the certificate errors
+      	END
+      	
+      	// Configuration of FTP Connection
+      	gstgvcFTPConfiguration is STgvcFTPConfiguration
+      	
+      	// Configure the application
+      	
+      	STgvcFTPConnection is Structure
+      		nConnectionID 		is int
+      		sStartTime		is string
+      		nTimerID			is int
+      	END
+      	gstgvcFTPConnection is STgvcFTPConnection
+      	eTransferDirection is Enumération
+      		ToServer
+      		ToClient
+      	END
+      	CONSTANT 
+      		ReturnTasksOK 	= "OK"			// Return for the cancelations of parallel tasks
+      		ReturnTasksNO  = "NO" 		// Return for the cancelations of parallel tasks
+      		TIMERLOCALTREEVIEW  = 42
+      		TIMERREMOTETREEVIEW  = 43
+      	END
+      
+      // Semaphore to manage the spool of transfer
+      SemaphoreCreate("PoolThread",10,0,shareNone)
+      
+      //boolean to find out whether the parallel tasks must stop	
+      bEndTask is boolean
+      
+      // There is no connection initially
+      gstgvcFTPConnection.nConnectionID = -1
+      
+      // Number of pending files
+      gnNbPendingFiles_cap is int
+      gnNBFailedFiles_cap is int
+      gnNBFilesOK_cap is int
+      
+      
+      // Array of transfers
+      garrTransferSize is array of int
+      
+      // Contains the IDs of current transfers
+      garrCurrentTransfer is array of int 
+      
+      // Configure the maximum number of parallel tasks
+      ParallelTaskConfigure(ptpMaximumNumberThread,6)
+     type : 196608
+   -
+     code : |1-
+      
+     type : 196610
+   -
+     code : |1-
+      
+     type : 196619
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD FTP File Transfer
+     identifier : 0x4acc51e5001d6825
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : PC SOFT FTP Server
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

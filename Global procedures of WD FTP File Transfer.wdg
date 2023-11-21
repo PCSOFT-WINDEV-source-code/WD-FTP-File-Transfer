@@ -1,0 +1,177 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Global procedures of WD FTP File Transfer
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x174577e40550b97c
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAA2Nh8YWYraNL3Uy4yisbiZcSwihzxSJM/m3cYXkUIj4If6laqMSnCoi2F9KM01DNm3cXyhxqeBsnzAdbNTNFjCLIZwhVA6nQ==
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : FTPDisconnection
+     procedure_id : 1676878257490868604
+     type_code : 15
+     code : |1-
+      PROCEDURE FTPDisconnection()
+      
+      // The tasks must stop
+      bEndTask = True
+      
+      OpenChild(WIN_Wait_Disconnection)
+      
+      // Are the tasks ended?
+      i is int =1
+      
+      EndAutomatedProcedure(UPDBandwidthChart)
+      EndAutomatedProcedure(UPDTableOfTransfers)
+      EndAutomatedProcedure(WIN_MAIN.CheckConnectionEnded)
+      
+      // Delete the pending files
+      ArrayDeleteAll(SET_FTP_parallel_tasks.garrArrayListFiles)
+      
+      WHILE i <=ArrayCount(WIN_MAIN.garr_ParallelTask)
+      	IF WIN_MAIN.garr_ParallelTask[i].Etat= ptsCanceled OR WIN_MAIN.garr_ParallelTask[i].Etat = ptsCompleted THEN
+      		i++
+      	ELSE
+      		// Wait for the end of parallel tasks
+      		Multitask(-1)
+      	END
+      END
+      Close(WIN_Wait_Disconnection)
+      
+      // Check whether the user is connected
+      FTPDisconnect(gstgvcFTPConnection.nConnectionID)
+      gstgvcFTPConnection.nConnectionID=-1
+      
+      // End of connection time accounting timer
+      EndTimer(gstgvcFTPConnection.nConnectionID)
+      
+      // Clear the elements from FTP
+      TableDeleteAll(WIN_MAIN.TABLE_Remote)
+      TableDeleteAll(WIN_MAIN.TVT_RemoteTreeView)
+      ArrayDeleteAll(garrTransferSize)
+      
+      // Inform the user about the status of the connection
+      Message(<§@19259d6c035b5a140000§>)
+     type : 458752
+   -
+     name : TestHFSQLFile
+     procedure_id : 1676878257490934140
+     type_code : 15
+     code : |1+
+      // Summary: Checks the opening of the files
+      // Syntax:
+      //TestHFSQLFile ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE TestHFSQLFile()
+      
+      // Positions the exact-match check
+      HCheckStructure("*", hIdentical)
+      
+      WHEN EXCEPTION IN
+      	// Checks the opening of all the files
+      	HOpen("*")
+      	HClose("*")
+      	TestWriteResult(twrInfo, "Files OK")
+      DO
+      	// Problems during opening
+      	TestWriteResult(twrError, "Files in error: " + ExceptionInfo(errMessage))
+      END
+      
+     type : 458752
+   -
+     name : Reconnection
+     procedure_id : 1676878257490999676
+     type_code : 15
+     code : |1+
+      // Summary: Reconnects the application to ftp
+      // Parameters:
+      //	sRemoteDir (ANSI string): Remote directory
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Reconnection(sRemoreDir is string)
+      FTPDisconnect(gstgvcFTPConnection.nConnectionID)
+      
+      // Local variables
+      sProtocol is string
+      
+      // Find the protocol according to the security of the connection
+      SWITCH gstgvcFTPConfiguration.gnConnectionSecurity
+      	CASE EConnectionSecurity.NotSecured
+      		// not secure	
+      		sProtocol = ""
+      		
+      	CASE EConnectionSecurity.SFTP
+      		// secure: SFTP protocol
+      		sProtocol = "sftp://"
+      	CASE EConnectionSecurity.FTPS
+      		// secure: FTPS protocol
+      		sProtocol = "ftps://"
+      	CASE EConnectionSecurity.FTPES			
+      		// secure: FTPES protocol	
+      		sProtocol = "ftpes://"
+      		
+      END
+      
+      IF gstgvcFTPConfiguration.gbIgnoreError = True THEN
+      	FTP.IgnoreError = ftpIgnoreInvalidCertificateName + ftpIgnoreInvalidCertificate + ftpIgnoreExpiredCertificate
+      ELSE
+      	FTP.IgnoreError = 0
+      END
+      
+      IF gstgvcFTPConfiguration.gbAnonymous=False THEN
+      	// Named connection
+      	IF gstgvcFTPConfiguration.gbAdvanced=False THEN
+      		// Standard setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address,gstgvcFTPConfiguration.gsUser_Name,gstgvcFTPConfiguration.gsPWD_user)		
+      	ELSE
+      		// Advanced setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address,gstgvcFTPConfiguration.gsUser_Name,...
+      		gstgvcFTPConfiguration.gsPWD_user,gstgvcFTPConfiguration.gnPort_number,gstgvcFTPConfiguration.gnConnectionType,gstgvcFTPConfiguration.gntimeout)
+      	END  	
+      ELSE
+      	// Anonymous connection
+      	IF gstgvcFTPConfiguration.gbAdvanced=False THEN
+      		// Standard setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address)
+      	ELSE
+      		// Advanced setting
+      		gstgvcFTPConnection.nConnectionID = FTPConnect(sProtocol+gstgvcFTPConfiguration.gsFTP_Address,"","",gstgvcFTPConfiguration.gnPort_number,gstgvcFTPConfiguration.gnConnectionType,gstgvcFTPConfiguration.gntimeout)
+      	END  	
+      END                    
+      
+      FTPCurrentDir(gstgvcFTPConnection.nConnectionID,sRemoreDir)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x19259d6c035b5a14
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Not connected
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
+associated_test :
+ name : TEST_Global_procedures_of_WD_Transferring_files_by_FTP.wxt

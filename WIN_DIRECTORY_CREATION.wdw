@@ -1,0 +1,279 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_DIRECTORY_CREATION
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_DIRECTORY_CREATION
+ identifier : 0x274577e1165aad86
+ internal_properties : CAAAAAgAAACQCzZYo4WVXPYLpMVWOOLqL7ynE2TSpnrFapiXIfHep7yzGbXujTX2MO7zRevTN0yWhoXL1azHgjJANixD4horWskOnAJpMnsHZzM+rklYL6OIOyyY4enZaKbHxZevuW6La0A5JmZC7n5ok5xTLs3RtEuaOmaa7j8sVOiOU6nyTG6yeYIOFMBj4W7vkb36W+0wYYlUnJmc0hE2csOsqS606QqaI2Wj6aV+k8loc3wrjWyxSHnUWdsTjvJnGHd0NBfMXbLltvE+3qUlzInZ+kgSOZX/weIq/bMWgDrTyt1VlKShPAEwVeCGm9SvbqTMA1tJvUOszC7Fr/1tloCXmcnafwHbXGzcdm9GyXtdQH99g5HboPq3hOSsYcORhfTGZsi+Ko5evs42Pww936/0SOEDfzzOSOLSH3dm6s/PsSmObJoqJkJYE3FKcnWBA9E9kLiTGvsYOGEhoY5MWzILyEh4dXrW+y/RoH97pC0cWq7GguH8tebCRFxbYD4iYFQ6zUM0VMitoCJoWnoR1LqPD+8eO2FAhWUZ1a0Ni9SqEh+TriH3xPhyp+0JEpBEnXwMkEMAgGnOe2C+hk3ZDMar31P0qlntFlCy1s4ROzDixx/a8J51xe/vUcLUuKpw8OoV7APjLgH4RldLDxtiCqOcdMqJGUfQm/s9WFf184pdYYOMLSuMjkdRSA6J5mH6neShPVM7iuzkDE97ZrggGTjLmwTEWhcgEc4hmLDnRk07ytejJpPNvHc5hZDKTxVW7odkeT3UQN8CjmFhUPpbOvF35j0BhJgAVNOtKwDzIJyvuiol/wRYa4RoE52y+pJBNLzOZ1gqQh6lDeKkkEJKHqVNM/LsHN7sk/hRJ4zT+KsPzkCZvvCk2GGwjvcSwwnxrU7WM8piw8eicHsp3nMJHq6/4Hoo30tgfzBDG/z8mf/WmT5b8ZkBm7P8wI4Rqm/6DYhaOWR2Y19wNKXl9BwwVDcERX6kv6omxHvH7NpIz9/ctCqzk5aJ8jEXDm8Ql+PIVIQIJV79X9Yj/WJJKU5bkM24vS62IoBFfRGyxigl7X1/R+O/AdcppWwG6TcrF5g8V6HvfobkStlsI+f/WEtg/RKVPjtzThv3IjYf+inGFAk5AeG9hX8ew19G4jZZo9e6iwKOH40Vl37NrXbScP8ZFqDoY6c2USl8swmiKXrtvJjSDwPDg3+KZO5vq9vcRh5acM/FO4Xqiv3XYe4GLMr6Q2LgJoSWU8rB2Zr/V/Cu4lc8YD+RG9MfDQkYiq+EN6at72wRgQCE2E8LAxjdsCkCGrg/3I0sOGyky9J7ZwSTSMX+Zzy7oQrAOvwRuFlUXSJJo7s3KkR92XvCWeEZf6fQl/xepCv7EckaxzGUqcoG48fZ0bV89KMoZg20YdbBeH2F
+ properties :
+  width : 337
+  height : 170
+  widthClient : 335
+  heightClient : 138
+  widthMin : 334
+ controls :
+  -
+    name : EDT_DIRECTORY
+    identifier : 0x274577e1165bad86
+    internal_properties : CAAAAAgAAABk6YxCj9wEJgfeVrcPFh3JDTeLSaWud/7Z3tEZ8zW/N7lgH7jGr4z54/RyhfIx/YGVLdG1dkLAD8dhvGuPQCiIdNBqpxhyxR3tLEUv7lPjtSHTjwPT36EwXHTyfnXHHgAi7Oxv5dHqZr1U5Xn8zV8LyPSsZH4OHdx33+feanlDas79B3pspOorr4K0Hlc4LmMaGdtJefMbmq6wfcA28+jYDnc44a5iXBoEUSw/o09FM62YoFZdbP1yuhdP0IsV9a4HO/HOcMXqw7uD5Z3npf5DVHCtjblIevc6IRejoiBJqA0mvNkvhjsbFxG87EiKo0wjjuUoDrIrIJABLNgBd0r7NDV+6V5Q1lhE/y82BuD+uq+r/4d7r4XUlcS2DfKjyNEitGKdU98OX86BL75xVLflo37Cp0rpQ/ef+bjMDdAsc7AjOG95DEbWD3g/aqgTMkfBD439rn23CqHELhxWS0wYAkjsjSfClDfTfuz5k5ziLqTxshBMmIDBs/PsbpVtO4mjFggMHGpwewnQVLYA/ZIQ9Cd5sz6dcN9jlBcxljKN5llmeroklF8//iBzC/Pr8MGu/Dcw3osSlOfa303S1D9Hc/smqlDdkqCXsqOXJonH1plQK51g4TifIbc85YQ+bvswVGiI/79iRsrekfbvYzHG4q8fVidCxvGRShdOnGZDXeg6o95xSzlYXLz7H7c7jjcDCjUbDJl7j8KMQbDjo9GEM4MaBrt0n6DeAGiYS/Hdxl7UCKn1VKhtzUQmiFxsa7LENm3S22I90Qc9BvT70eJTZK16/WyEBndgu1FdnuoWYVzGocm3ay+ga7fc4J+H+vFYkW7Ubk7jKE05BaWBhk2NrOUiPw2eH0w8Nybmgjr4+PnAg6skV/2kiOkgigD40ucVuk0rNi0fh3+gVmw35M1FvNji8szZRITgOOjSjt3KSMHYa1+ID3ePBDXQSxvjFA4FksZi9n+5sabh2OYDJxZgN3HiZ5qW/0atkrdWzMpz2ZIhit/gaMkOQjnlrPxLG8cU/gB/kkWJ5iQAYLElMzrleErLAExETf3Ci74MzwhKWuTElmKSULPJ5/I+OIMHtyuakG7HJrAcoqg/G3haoAf/uvtl+sd0cfp6CVkrtqdgs/Gsw4IAFz/e/41wRxCF67R2EnOEOKIp4hsLxUT6nCap596Mg8Oh0xwdS9A9a/lQjAuHKEdJa+ZrFzMvt9vug3OY1NvQ5O1tkiHknjKFg8wyI/c2ZI/wLFg6dh358uLaGQVju3SR/suwFv0pkdapj7hzLXe/MvL8bXlijRI+AJgUdc2h6ZqM7dnHyZawpRHfOY5QcoezlHhOP/imle1Ahl8i4Yj88y5Oq89s5rWI6+L+TteuooxlRfJt7ogn85V2ou2mwxMhMZJy6+qnItEYAMCt4Jca3/Q=
+    properties :
+     x : 6
+     y : 56
+     width : 317
+     height : 38
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : BTN_OK
+    identifier : 0x274577e1165cad86
+    internal_properties : CAAAAAgAAAA/E6YKD3wj30oqZ1+MjyrNh2YO1CqkFbY0e97Uid0MKXKqtWohJ4UtlK2Vv5vFj7DcXtTTe8KSnsxFSCmuP7G4pwBBzErcqmcf0yxCU7PLY4E1YZegJg3BF2P87RtnfGF4hyt2HiJsoagbZMaiKNmE1YFrX6qREYVdT6rv0xhSePjTYq6ZuJ7GGwufM4vBZhNSau9k/VBpwCJZTESTBK4F9LCXvntIu2PEXukHOooXTfVeQLSGLuZiiX8QmJrQc3E6Ftge8usykFr1oWdZsaK6rrbkGlgSNHaGp+Bd5s0SP3utTqErWFgdNcuus3SZIl2kzWbK/h5NzTGDVrMKoPbHSU/HDX4kMtI99Cvfnn454iMEUny68nVRbMgCKUIZe61F65Z/Cmlp2EuPr87i5+9tM2PsUvYv1ejy+03LgS0DNrlTjPO4DjKzHnB5g2Rlh7GgeWs88Kq7NbtKGkm7mkHVXBQh1E3MHGYK5+aN3pggrZwWoKabN2+qS2vIqxnz9ZgiuFxHsvlHr3F72DiPcjj7dOd8nMwWVfkuIDCutTy10/u7J24kJeJMhwONxQpRZ09NtJmc4DBWU/CLUBsiQ8lXU6ksfCPua1H+BFXVdAR0U2VRCMOHKKDn9xOokRYaSI82Br3DUj5hxBTkFOkqoBiRYVPtFpqstaUsqjkXRIDE6dQyNOyK8calG7rvYfYTIPBRCC/tgQxRfF58dVj2iI+tbhQVIP96Pn3xAy7GeW/bWGgKrMcpW1m7PVXG23/JZYnH1HVA8tBvyFwVxsq7NAgRlRVk2o/MKeAupSjuPRlML7PmPd8+aIMSXPkrC/fDi90vpYZ37nTNlv8w5ddeGVxNIYNO0+4kUtRPnn3KAfyMe4/O4o4B5MkXXgSURFPaAOYVRQKxHXiksBYY596Jznos06Z7qK0Wgl/EGffGSeIcoqvv4nUKdIOuwmIToUMIXI0lHtBr5hiGiw1R9t829m6GEE2s0GsDhA==
+    properties :
+     x : 157
+     y : 100
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAD3PfhAj13+e3Tq365W/blzvSGdoN6J5K4US3kiB8bjYfoY0ANQmI+kHwpltaxV/4XJzvToP9zvc0FAUaUEhW3Nud9GGA0xCOiIYt4jowi+e0qmBhgGkQ==
+        code : |1-
+         // Local variables
+         cSeparator is string
+         
+         // Manage the separator ("fSep" in Windows, "/" in FTP)
+         IF bLocal = True THEN
+         	cSeparator = fSep
+         ELSE
+         	cSeparator = "/"
+         	IF sCurrentDir = "/" THEN cSeparator = ""
+         END
+         
+         // Create the directory
+            // Check whether it is a local directory or a remote directory
+         IF bLocal = True THEN
+         	// Local directory	
+         	fMakeDir(sCurrentDir+cSeparator+EDT_DIRECTORY)
+         	sCurrentDir = NoSpace(sCurrentDir)+NoSpace(cSeparator)+NoSpace(EDT_DIRECTORY)						
+         
+         ELSE
+         	// Remote Directory (FTP)
+         	FTPMakeDir(gstgvcFTPConnection.nConnectionID,sCurrentDir+cSeparator+EDT_DIRECTORY)
+         	sCurrentDir = NoSpace(sCurrentDir)+NoSpace(cSeparator)+NoSpace(EDT_DIRECTORY)
+         END
+         
+         
+         // Close the window
+         Close
+         
+         CASE Error:
+         		Error(<§$0000§>,ErrorInfo(errSummary))
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_CANCEL
+    identifier : 0x274577e1165dad86
+    internal_properties : CAAAAAgAAAC1YxzgOsiTzDFPnJGZeWa5qQOJPEm5scFrDLsdBLJ7WzZDgV+qWLR1dcN1UJBa+0BNpJlGmnXIukhm6M6ydEV+gtCL+3exQHLVOLtBAgB34bxksii4t7ahfGH7NgdEydrwcuT0dTvlAZyPgMwk0FFoUxpKRqrE03icc+fbeLiG7X0dNSKDIKNP32HmhPs9LDBKMfmgrKLs7x1Cc2ic+yrbqLZxDWdvmE98Dsxp8MZSpkOIbTr4JfV7MsxTVEGwPWM7xNcc9oeWBnyYYoQQFLe2YJmCtWuorpsUglEaKqncsMbYJmzy+Co2fHa+rRmf4sOwy5Rf5A18BxLP2bDVkDzkLCbwjvbkb9kemEoXU5LYcUeD5yx+KK2pzO9PvG8UZJwB2F0+iG3ZidKJjC7/T9c5TC3EtVPClpdtbjMPzQdtNLw6a1u/1Ae4WB0XhbO75JfXgJYPEdLEDpDfkF6RPw4sC7HJ4Cng1JgipySsXK/kjxv5NFKd+3D/9Zk4U2nSWDD/+rOuL4fHOMaj78bqKqgiC7KyzQ06qLzDXCxStYSbhaahclHxScdwb9jyg9JsFOlM/frDpBRcEEULeHTYZIel7r9gFIhT7mC+6szuemmcBC0b18rNa+CXdLSDY8xScRuhaWCggKAiC1mSpk3fBTcJ+ficTd+eAdoDtpSrwl9lV18UVIKUcPzgcfYmQpnH1MugqAq09JWIqZoRc8MeVmMJfUBoWMesa1P8CQ7dd+1sBuwIJCL23lp9xgyk/hUbj1g1mviAl1xHsARLFtnYs/o2nvBuoq/v09ccMfrDvBMxOakgCGIqczBm4HDQy3VK3fG2TetW9C2xdEfOOh824EndjqvIuJae43QbQsyBZLru1hYYD33Rbq/RRaLiSVh/AxTbGnGaU9YZFT60HEwkaBdS2TXJ0gfGXsk10dPNS4lH4T2We0kUW56hHuWCeVF3jMlciK95ayGDeVmuCjkDF7tBaeRV9IiNLCoWxs/Io0HGxRZUtk0=
+    properties :
+     x : 243
+     y : 100
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1+
+         // Close the window
+         Close
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_SUBTITLE
+    identifier : 0x274577e1165ead86
+    internal_properties : CAAAAAgAAAC9/hRhlMYOhKnV0HYRcl7RuAjuys0fRBe7OQqP/4zgdUl2BpOWPz7k2QMnYiJsAackyqCBj0R2oCxwYHR1FY0mOhDqwHb2RAa55Y+gDl+vpyzBfY0TlB+lCAri/mNat0tJuHYT6/ibNVC/zCf5ZHMlA+OmNNj2bQ9Wa4jiGxAHkl8hZyflWVD1Qy2JqnRqgjZVPf6Gldv0lHQl8dOZynpX4WeynTkE08yYB0ujzP+HXH7qAabtAU2+cmVQG61JPgRYGqOAv8+/nu8kCgU1IpN5BW2+DTCkC03z5oIgrU1gZtI2EvOAg16UA6WfxB3CwxUsTwdwqTLMrzAvqkdFhupszeoH+IDhMSP9ETIyVj33/HujN8omNMLtYELaxbwXBOvpq7xVfjPawKVCVB+Ocm12UIOS6X/Qty8NKJ6H8B+iD7PQoF0d3hFzjjaL2jmhhkHwgY+wo0uls5q8oyVSK8V5e2Dw02SQ/saeA5X4SShNiIg8HEA4GrkNLiXBZzSeT0gotsfED/axaH1GMMuEbbME2lKe
+    properties :
+     x : 4
+     y : 4
+     width : 311
+     height : 42
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1+
+         //Runs the process defined in the template
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x23e8ae573108f505
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABQQzmQpSWAxECqpaA+ToyskEXkZhdPa/8ohQPceFOMhGS8dzqD+T6Edh1ifyOez6MNG4pu8mcLEWZ/WLqRChpsVPdr3p4U09oWNbqksQE3MoVr/JeP0BuGib0oE1FbpQ==
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAAVICWzw3Vr0Xj5SB0+uwZxU/hwwAAA1ypVf01WuX++h9Ou9vFt6Jk+89XvZIt/LfVqiD0oF9NbZEmSFDBrJVXge0OZrAGLP3FxR+Uxgg11IHW4FHzAjGN7C61C953B770xKAGK9HYWGw==
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE WIN_DIRECTORY_CREATION(sCurrentDir="",bLocal=True)
+      
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  templates :
+   -
+     name : WIN_DIRECTORY_CREATION
+     identifier : 0x1557969f026bacfc
+     code_elements :
+      internal_properties : CAAAAAgAAABKbch/s44i4Mq2ucV7u4BmPXWl9BR7GA4zLumE1HvxIoyefh3FSw86tD+fNtYtUz5LCLJ+Nvbcn4reJ0mpk7GS4vkfKu+6hvGZtuOHqXirYZEv5fXHuTBnv++UdJ8ttkQvyw==
+      type_code : 1
+      p_codes :
+       -
+         code : |1+
+          
+          
+       -
+         code : |1+
+          
+          
+         type : 34
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+       -
+         code : |1+
+          
+          
+         type : 2
+       -
+         code : |1+
+          
+          
+         type : 11
+       -
+         code : |1+
+          
+          
+         type : 12
+       -
+         code : |1+
+          
+          
+         type : 17
+       -
+         code : |1+
+          
+          
+         type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAABAQoHo7e0KLUuo9JVZHxjriK9OWWJjRo0FLLFVj3UVI3LlcnspdTXUpEc/fJitualOAJHXbP1C+JSEwd7uhoY+PpKBWuHE8Qdw5yigYVh9BFpmBT1Z9pqZuEaKFMugWVPqb6M=
+  original_name : FenCreationRepertoire
+resources :
+ string_res :
+  identifier : 0x3adf1bba6940c585
+  internal_properties : CAAAAAgAAABYKp3KBci7QSSULtu2KtzNYqygVd9Dt6eqyJwtSaB1ofcXGciKNhQ76Fd0dKQ+6N8/xw==
+  strings :
+   -
+     text :
+      en-GB : An error occurred while creating the directory
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

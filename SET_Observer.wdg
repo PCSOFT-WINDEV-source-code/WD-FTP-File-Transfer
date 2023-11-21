@@ -1,0 +1,352 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : SET_Observer
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x174577e6057fbebc
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAAtFHS2Pfcd6ofEy2KIF9fy1qc0W9/QSEfCle1FxyI4G2j/Yl3eUrrhYMHGdg6NjDIPWNlO/vmvkw1Qdn/KHOjkQa8e1Q==
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      // The WD FTP File Transfer application is using the pattern
+      
+      // Number of bytes already sent, useful for the bandwidth chart
+      gnNBPreviousBytes is int = 0
+     type : 720896
+  procedures :
+   -
+     name : UPDBandwidthChart
+     internal_properties : CAAAAAgAAAA7AsTjVbDQkJHR6+5LJq6jE1oaZmbq9Gqv/1vDymd94S0skY5d6t83SdGsbq0qtEoja9TLJcAGImJqkPjie//AT3MTfoy3+sNYE354IIDnmD3e47zVaSwnti21Y14+ZiOt4IYpF8l7rC1qSC557mFskwX04FEN+LlPErfK/9gfN8OrsrU=
+     procedure_id : 1676878266083884732
+     type_code : 15
+     group : 5
+     code : |1-
+      // Summary: Procedure periodically called during the FTP transfers to update the bandwidth chart
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      // Automatic procedure:
+      // The procedure is run manually, during a call in the code
+      // It will be repeated in loop, with 1 second between each call
+      // A new timer is created for each call to the procedure
+      // 
+      
+      PROCEDURE UPDBandwidthChart()
+      
+      // If the window is started
+      IF WIN_MAIN..State = Active THEN
+      	
+      	//Sum of transfers
+      	nTransferSum is int = 0
+      	
+      	FOR EACH stElementToTransferLocal  of SET_FTP_parallel_tasks.garrArrayListFiles
+      		// Sum of all the files to transfer
+      		nTransferSum = nTransferSum+stElementToTransferLocal.nSizeAlreadyRetrieved
+      	END
+      	
+      	// Subtract the last value of the chart to find out how many bytes have been transferred between two procedure calls
+      	
+      	
+      	// To remember the value that was previously counted
+      	nPreviousBytes is int = 0
+      	
+      	nPreviousBytes = nTransferSum
+      	nTransferSum = nTransferSum -gnNBPreviousBytes
+      	// Save the number of bytes already transferred for the next call to the function
+      	gnNBPreviousBytes = nPreviousBytes
+      	
+      	// to get the value in KB
+      	nTransferSum = Abs(nTransferSum / 1000)
+      	
+      	
+      	// To remember the value of the previous series
+      	nPreviousSeries1,nPreviousSeries2,nPreviousSeries3,nPreviousSeries4,nPreviousSeries5 is int = 0
+      	
+      	// Retrieve the previous values
+      	nPreviousSeries1 = grGetData(WIN_MAIN.CHART_Bandwidth,1,2)
+      	nPreviousSeries2 = grGetData(WIN_MAIN.CHART_Bandwidth,1,3)
+      	nPreviousSeries3 = grGetData(WIN_MAIN.CHART_Bandwidth,1,4)
+      	nPreviousSeries4 = grGetData(WIN_MAIN.CHART_Bandwidth,1,5)
+      	nPreviousSeries5 = grGetData(WIN_MAIN.CHART_Bandwidth,1,6)
+      	
+      	// Delete the series
+      	grDeleteSeries(WIN_MAIN.CHART_Bandwidth,1)
+      	
+      	//add the former values in order to always have the last 6 points displayed
+      	grAddData(WIN_MAIN.CHART_Bandwidth,1,nPreviousSeries1)
+      	grAddData(WIN_MAIN.CHART_Bandwidth,1,nPreviousSeries2)
+      	grAddData(WIN_MAIN.CHART_Bandwidth,1,nPreviousSeries3)
+      	grAddData(WIN_MAIN.CHART_Bandwidth,1,nPreviousSeries4)
+      	grAddData(WIN_MAIN.CHART_Bandwidth,1,nPreviousSeries5)
+      	grAddData(WIN_MAIN.CHART_Bandwidth,1,nTransferSum)
+      	
+      	
+      	// Draw the chart
+      	grDraw(WIN_MAIN.CHART_Bandwidth)
+      	
+      END
+     type : 458752
+   -
+     name : UPDTableOfTransfers
+     internal_properties : CAAAAAgAAADeO36l67cuncfQoU6BLblpBMoDwSW+xt0rIrnU7b28FPfKNuDKIKF7RDj4aD/LoACSuKVfIZvirco8d+o19GJ7JziMbOuL5Mo9YoBWOiv9Whr5it4x1WBk9qLMMIcFVeHlYvBOrfqx+lkWXXnw516KY3vtTEEn8jTjwQ0pIJCGaUVkB1i9xbS6QeANzsmJO/PTBZafIClQ0L4FC66PgwaIAcpFKnXfu3iNhXPoSJO5/JQw4DyRx7SduReZZ/vAeooLqv8DbEGllRQYPDLyYyueTbhQPKNo31B2BLs2KaxZCRBGkosJN2jMzJ8MC+XBPQ2o2aoVVbWlrBuuPunZ7oZZWgN3gAxw35a2keFiZqRRsP6qJBUy9275T+7N/4qfrJPT02GwLk+nRg==
+     procedure_id : 1676878266083950268
+     type_code : 15
+     group : 5
+     code : |1-
+      // Summary: Procedure periodically called during the FTP transfers to update the TABLE_Current_transfers table
+      // Syntax:
+      //UPDTableOfTransfers ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      // Automatic procedure:
+      // The procedure is automatically run, after the initialization code of the project, with a time-out set to 5 seconds
+      // It will be repeated in loop, with 1 second and 50 hundredths of a second between each call
+      // A new timer is created for each call to the procedure
+      // 
+      
+      PROCEDURE UPDTableOfTransfers()
+      
+      // If the window is started
+      IF WIN_MAIN..State = Active THEN
+      	
+      	// End of transfers?
+      	bEntireTransfertEnded is boolean = True
+      	// Subscript in the table of the element of the update loop
+      	nRowSubscript is int
+      	// Subscript to find the value of the array
+      	nTransferSubscript is int =1
+      	// For the operating mode of internal procedures
+      	stElementToTransferLocal is STFileToRetrieve
+      	
+      	// Current enumeration
+      	eCurrentEnumeration is EFTPStatus
+      	
+      	// Perform a critical section in order for the array not to be modified during the display => if several small files, infinite loop
+      	CriticalSectionStart()
+      	IF garrCurrentTransfer..Occurrence>SET_FTP_parallel_tasks.garrArrayListFiles..Occurrence THEN
+      		RETURN		
+      	END
+      	
+      	// Files currently transferred
+      	FOR i=1 TO garrCurrentTransfer..Occurrence
+      		
+      		// Retrieve the information
+      		nTransferSubscript = garrCurrentTransfer[i]
+      		
+      		stElementToTransferLocal = SET_FTP_parallel_tasks.garrArrayListFiles[nTransferSubscript]
+      					
+      		// Is the element found in the table?
+      		nRowSubscript= TableSeek(WIN_MAIN.TABLE_Transfer_in_progress.COL_ARRAYID,nTransferSubscript,True)
+      		
+      		IF stElementToTransferLocal.nFileSize = 0 _AND_ nTransferSubscript<=garrTransferSize..Occurrence THEN
+      			stElementToTransferLocal.nFileSize = garrTransferSize[nTransferSubscript]
+      		END
+      		
+      		IF stElementToTransferLocal.bTransferCompleted=False  THEN
+      			// The element is currently transferred or it must be transferred, therefore it is not ended
+      			TransferNotEnded()
+      		ELSE		
+      			IF TableSeek(WIN_MAIN.TABLE_Failure.COL_ARRAYID,nTransferSubscript,True)=-1 AND TableSeek(WIN_MAIN.TABLE_Successful.COL_ARRAYID,nTransferSubscript,True)=-1 THEN
+      				TransferEnded()	
+      				ArrayDelete(garrCurrentTransfer,i)	
+      			END
+      		END		
+      	END
+      	CriticalSectionEnd()
+      END
+      
+      // UPD the global information
+      WIN_MAIN.TAB_Transfer[1]..Caption = "Files in queue (" +gnNbPendingFiles_cap+")"
+      WIN_MAIN.TAB_Transfer[2]..Caption = "Failed transfers (" +gnNBFailedFiles_cap+")"
+      WIN_MAIN.TAB_Transfer[3]..Caption = "Successful transfers (" +gnNBFilesOK_cap+")"
+      
+      
+      	INTERNAL PROCEDURE TransferEnded()
+      	// The element was transferred
+      	IF nRowSubscript<>-1 THEN
+      		TableDelete(WIN_MAIN.TABLE_Transfer_in_progress,nRowSubscript)
+      	END
+      	IF stElementToTransferLocal.bTransferOK = True THEN
+      		IF stElementToTransferLocal.nSizeAlreadyRetrieved >= stElementToTransferLocal.nFileSize THEN
+      			stElementToTransferLocal.nFileSize = stElementToTransferLocal.nSizeAlreadyRetrieved
+      			eCurrentEnumeration = FTPDone
+      			TableInsertLine(WIN_MAIN.TABLE_Successful,1,nTransferSubscript,eCurrentEnumeration..Value,stElementToTransferLocal.sFileNameWithoutPath,stElementToTransferLocal.nSizeAlreadyRetrieved,stElementToTransferLocal.nFileSize)
+      			// This table must contain 6 columns: 
+      			// Col 1: Numeric for the number of the internal array (invisible if possible)
+      			// Col 2: FTPToProcess, FTPInProgress, FTPDone, FTPInError,FTPCanceled
+      			// Col 3: text for the name of a file
+      			// Col 4: Integer for the size retrieved
+      			// COL 5: TotalFilseSize
+      			// Col 6: Image for the progress bar
+      			
+      			WIN_MAIN.TABLE_Successful[1].COL_PROGRESSBAR..MaxValue = stElementToTransferLocal:nFileSize
+      			WIN_MAIN.TABLE_Successful[1].COL_PROGRESSBAR..MinValue = 0
+      			WIN_MAIN.TABLE_Successful[1].COL_PROGRESSBAR = WIN_MAIN.TABLE_Successful[1].COL_PROGRESSBAR..MaxValue
+      			gnNBFilesOK_cap+=1
+      		ELSE
+      			eCurrentEnumeration = FTPCanceled
+      			TableInsertLine(WIN_MAIN.TABLE_Failure,1,nTransferSubscript,eCurrentEnumeration..Value,stElementToTransferLocal.sFileNameWithoutPath,stElementToTransferLocal.nSizeAlreadyRetrieved,stElementToTransferLocal.nFileSize)
+      			// This table must contain 6 columns: 
+      			// Col 1: Numeric for the number of the internal array (invisible if possible)
+      			// Col 2: FTPToProcess, FTPInProgress, FTPDone, FTPInError,FTPCanceled
+      			// Col 3: text for the name of a file
+      			// Col 4: Integer for the size retrieved
+      			// COL 5: TotalFilseSize
+      			// Col 6: Image for the progress bar
+      			
+      			WIN_MAIN.TABLE_Failure[1].COL_PROGRESSBAR..MaxValue = stElementToTransferLocal:nFileSize
+      			WIN_MAIN.TABLE_Failure[1].COL_PROGRESSBAR..MinValue = 0
+      			gnNBFailedFiles_cap+=1
+      		END
+      		
+      	ELSE
+      		
+      		eCurrentEnumeration = FTPInError
+      		TableInsertLine(WIN_MAIN.TABLE_Failure,1,nTransferSubscript,eCurrentEnumeration..Value,stElementToTransferLocal.sFileNameWithoutPath,stElementToTransferLocal.nSizeAlreadyRetrieved,stElementToTransferLocal.nFileSize)
+      		// This table must contain 6 columns: 
+      		// Col 1: Numeric for the number of the internal array (invisible if possible)
+      		// Col 2: FTPToProcess, FTPInProgress, FTPDone, FTPInError,FTPCanceled
+      		// Col 3: text for the name of a file
+      		// Col 4: Integer for the size retrieved
+      		// COL 5: TotalFilseSize
+      		// Col 6: Image for the progress bar
+      		
+      		WIN_MAIN.TABLE_Failure[1].COL_PROGRESSBAR..MaxValue = stElementToTransferLocal:nFileSize
+      		WIN_MAIN.TABLE_Failure[1].COL_PROGRESSBAR..MinValue = 0
+      		gnNBFailedFiles_cap+=1
+      		
+      	END
+      	
+      	
+      	// Error?
+      	IF stElementToTransferLocal.bTransferOK=False THEN
+      		// Display the error?
+      		Info(<§@160a447a00299f0e0000§> + stElementToTransferLocal.sFileNameWithoutPath + CR + <§@160a447a00299f0e0001§>+ stElementToTransferLocal.sTC_Review)
+      	END
+      	
+      	// A file is ended, another one can be processed
+      	SemaphoreEnd("PoolThread",1)
+      	
+      	gnNbPendingFiles_cap -= 1
+      	
+      	//ToastDisplay("End of file transfer "+stElementToTransferLocal.sFileNameWithoutPath)
+      	//ExecuteProcess(WIN_MAIN.BTN_Refresh_REMOTE,trtClick)
+      	//ExecuteProcess(WIN_MAIN.BTN_Refresh_LOCAL,trtClick)
+      	
+      	END
+      
+      	INTERNAL PROCEDURE TransferNotEnded()
+      	// At least one transfer is not ended
+      	bEntireTransfertEnded=False
+      	// Element not found in the table
+      	IF  nRowSubscript = -1 THEN
+      		// Element not found in the table
+      		
+      		// Element currently transferred?
+      		IF stElementToTransferLocal.bCurrentTransfer = True THEN
+      			// Element currently transferred
+      			eCurrentEnumeration = FTPInProgress
+      			nRowSubscript=TableAddLine(WIN_MAIN.TABLE_Transfer_in_progress,nTransferSubscript,eCurrentEnumeration..Value,stElementToTransferLocal.sFileNameWithoutPath,stElementToTransferLocal.nSizeAlreadyRetrieved,stElementToTransferLocal.nFileSize)
+      			// This table must contain 6 columns: 
+      			// Col 1: Numeric for the number of the internal array (invisible if possible)
+      			// Col 2: FTPToProcess, FTPInProgress, FTPDone, FTPInError
+      			// Col 3: text for the name of a file
+      			// Col 4: Integer for the size retrieved
+      			// COL 5: TotalFilseSize
+      			// Col 6: Image for the progress bar
+      		ELSE
+      			// Element to process
+      			eCurrentEnumeration = FTPToProcess
+      			nRowSubscript=TableAddLine(WIN_MAIN.TABLE_Transfer_in_progress,nTransferSubscript,eCurrentEnumeration..Value,stElementToTransferLocal.sFileNameWithoutPath,stElementToTransferLocal.nSizeAlreadyRetrieved,stElementToTransferLocal.nFileSize)
+      			// This table must contain 6 columns: 
+      			// Col 1: Numeric for the number of the internal array (invisible if possible)
+      			// Col 2: FTPToProcess, FTPInProgress, FTPDone, FTPInError
+      			// Col 3: text for the name of a file
+      			// Col 4: Integer for the size retrieved
+      			// COL 5: TotalFilseSize
+      			// Col 6: Image for the progress bar
+      		END
+      		
+      		// Values of bounds for the progress bar
+      		WIN_MAIN.TABLE_Transfer_in_progress[nRowSubscript].COL_PROGRESSBAR..MaxValue = stElementToTransferLocal:nFileSize
+      		WIN_MAIN.TABLE_Transfer_in_progress[nRowSubscript].COL_PROGRESSBAR..MinValue = 0
+      		
+      	ELSE
+      		// Element found in the array
+      		IF stElementToTransferLocal.bCurrentTransfer=True THEN
+      			eCurrentEnumeration = FTPInProgress
+      			WIN_MAIN.TABLE_Transfer_in_progress[nRowSubscript].COL_CURRENT = eCurrentEnumeration..Value	
+      		ELSE
+      			eCurrentEnumeration = FTPToProcess
+      			WIN_MAIN.TABLE_Transfer_in_progress[nRowSubscript].COL_CURRENT = eCurrentEnumeration..Value
+      		END
+      		
+      		WIN_MAIN.TABLE_Transfer_in_progress[nRowSubscript].COL_SIZEPERFORMED=stElementToTransferLocal.nSizeAlreadyRetrieved
+      		WIN_MAIN.TABLE_Transfer_in_progress[nRowSubscript].COL_PROGRESSBAR = stElementToTransferLocal.nSizeAlreadyRetrieved
+      	END
+      	
+      	END
+     type : 458752
+   -
+     name : ClearTransferList
+     internal_properties : CAAAAAgAAACRzYOgRFf1jI1N9+CWCThcQsi2vITGd20f2ltmmPsoJYZ/sLXAcALfIsvKxSNRje0RjwVVUvl9IzNQpHbvXq1g/H6prIcyYWjh9UfZm2AnQ8Z1l9HKEoriRhLH/0wlIL7W9ewtYdmEFKJ+HPPXZF3OSVCJLTlGmDMBoORbkcOpy370IUa7TqrmVYXbSL7/Q1f2lyXs8wBC5gOHOieI5Rg8yVEVlrsRDFp0a4m8ZS7EC5xy/5kkjN0gsaW0T8Rs/AIUtH5RvnikdBToYEWnSH9IuDAVMmgqkm/synHbs7rA3xcXTBviHJDzvjuHlbwXSCQFse0m1NbtsYhYjKkAEA0uh+XljBV7448sg22aaWZKSb7Av8/S1TzoyqY3uQWjqSuqElfkKbUC
+     procedure_id : 1676878266084015804
+     type_code : 15
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ClearTransferList()
+      // Element in loop
+      i is int = 1
+      
+      // Delete the elements ended without error
+      FOR i = 1 TO ArrayCount(SET_FTP_parallel_tasks.garrArrayListFiles)
+      	IF SET_FTP_parallel_tasks.garrArrayListFiles[i].bTransferCompleted  AND SET_FTP_parallel_tasks.garrArrayListFiles[i].bTransferOK THEN
+      		ArrayDelete(SET_FTP_parallel_tasks.garrArrayListFiles,i)
+      		TableDelete(WIN_MAIN.TABLE_Transfer_in_progress,i)
+      		i--
+      	END
+      END
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x160a447a00299f0e
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : "Error while transferring file: "
+     index : 0
+   -
+     text :
+      en-GB : "Status report of error:"
+     index : 1
+   -
+     text :
+      en-GB : End of file transfer
+     index : 2
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

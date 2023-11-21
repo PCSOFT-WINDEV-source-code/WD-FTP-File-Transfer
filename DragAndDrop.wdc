@@ -1,0 +1,133 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : DragAndDrop
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x160d076b01a6dba6
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      DragAndDrop is Class
+      	PRIVATE
+      	m_arrStartRow is array of int // Number of start line for Drag and Drop
+      	m_nCurrentRow is int // Number of the line currently selected
+      	m_bInProgress is boolean = False // Find out whether Drag and Drop was started	
+      END
+     type : 131072
+  procedures :
+   -
+     name : Manufacturer
+     procedure_id : 1588934399702326182
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructor()
+      
+     type : 589824
+   -
+     name : Destructor_
+     procedure_id : 1588934399702391718
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructor()
+      
+     type : 655360
+   -
+     name : UPD_DragAndDrop
+     procedure_id : 1588940099124337829
+     type_code : 12
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Parameters:
+      //	nCurrentLine (integer): Line where the mouse is found
+      // Return value:
+      // 	None
+      //
+      PROCEDURE PUBLIC UPD_DragAndDrop(nCurrentLine is int)
+      
+      m_nCurrentRow = nCurrentLine
+     type : 458752
+   -
+     name : getLineStart
+     procedure_id : 1588941507874725458
+     type_code : 12
+     code : |1+
+      // Summary: Get of start line
+      // Parameters:
+      //	None
+      // Return value:
+      // 	array: start line of DnD
+      //
+      PROCEDURE getLineStart()
+      RESULT m_arrStartRow
+      
+     type : 458752
+   -
+     name : getLineEnd
+     procedure_id : 1588941537939568551
+     type_code : 12
+     code : |1+
+      // Summary: Get of end line
+      // Parameters:
+      //	None
+      // Return value:
+      // 	integer: End line of DnD
+      //
+      PROCEDURE getLineEnd()
+      RESULT m_nCurrentRow
+      
+     type : 458752
+   -
+     name : EndDnD
+     procedure_id : 1588942049041188975
+     type_code : 12
+     code : |1+
+      // Summary: End of DND
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE EndDnD()
+      
+      ArrayDeleteAll(m_arrStartRow)
+      m_nCurrentRow = 0
+      m_bInProgress = False 
+     type : 458752
+   -
+     name : BeginDrag
+     procedure_id : 1588946043363212193
+     type_code : 12
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Parameters:
+      //	nLineSubscript (integer): Subscript of start line for drag
+      // Return value:
+      // 	None
+      //
+      //	nCurrentLine (integer): Line where the mouse is found
+      PROCEDURE BeginDrag(nRowSubscript is int)
+       ArrayDeleteAll(m_arrStartRow)
+      IF nRowSubscript> 0 THEN
+      	ArrayAdd(m_arrStartRow,nRowSubscript)
+      	m_bInProgress = True
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x160d076b01a3db58
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
